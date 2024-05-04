@@ -1,0 +1,45 @@
+    
+       --- G.F.S.S V1 21-4-24 --- 
+	
+WEBSITE PLAN :
+
+	-- INDEX PAGE / HOME PAGE 
+	-- SERVICES PAGE 
+	-- ABOUT US PAGE
+	-- CONTACT US PAGE
+	-- LOGIN PAGE
+________________________________________________
+
+CHANGES MADE ON THIS DAY :
+
+- Index Page Plan Created .
+
+INDEX PAGE PLAN :
+
+	-- NAVBAR
+		- PROPERTIES : 
+				* Transparent
+				* Red Theme
+		- HOME
+		- SERVICES
+		- ABOUT US 
+		- CONTACT US 
+		- LOGIN 
+	-- ADVERTISEMENT
+		- 4 Images Rolling
+		- CONSULT Button
+	-- COMPANY HISTORY
+		- 1 Paragraph 
+	-- FOUNDERS CARD
+		- 2 Flip Cards 
+	-- MEMORY GALLERY
+		- 9 Pictures Depicting Achievements
+	-- FREE QUOTATION FORM
+		- Form For Basic Info & Contact
+		- Sends Quote PDF On Gmail
+	-- FOOTER
+		- Logo In Center
+		- 24/7 Helpline On Left
+		- Social Media Links On Right 
+
+Copyright Reserved G.F.S.S , D-Fuzer® Army .

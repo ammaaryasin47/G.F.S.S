@@ -1,0 +1,701 @@
+/*<-------------------------------------------------- FONT IMPORT ----------------------------------------------->*/
+
+/* FONT NAME : POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FONT NAME : ARVO */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
+
+/* FONT NAME : ALEGREYA */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* FONT NAME: QUANTICO */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME: COURIER PRIME */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : Alegreya SC  */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: url(../IMAGES/Advert01.jpg);
+}
+
+.Terms-Conditions {
+  color: white;
+  margin: 0px 10px;
+}
+
+.Terms-Conditions:hover {
+  color: rgb(40, 157, 235);
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
+
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 5px 35px;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  position: sticky;
+  left: 55px;
+  color: #fff;
+  width: 70px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: rgb(40, 157, 235);
+}
+
+/* ----- Carousel ----- */
+
+/* .wrap {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  left: -100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(100%);
+}
+.carousel.is-reversing {
+  transform: translateX(-100%);
+}
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (min-width: 30em) {
+  .carousel {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+  .carousel.is-reversing {
+    transform: translateX(-33.33333%);
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel {
+    left: -20%;
+    transform: translateX(20%);
+  }
+  .carousel.is-reversing {
+    transform: translateX(-20%);
+  }
+}
+
+/* ----- Seats ----- */
+
+/* .carousel-seat {
+  background: #ddd;
+  flex: 1 0 100%;
+  order: 2;
+}
+.carousel-seat:nth-child(even) {
+  background: #d5d5d5;
+}
+
+@media (min-width: 30em) {
+  .carousel-seat {
+    flex-basis: 33.33333%;
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel-seat {
+    flex-basis: 20%;
+  }
+}
+
+.carousel-seat.is-ref {
+  order: 1;
+}
+
+/* ----- Presentation ----- */
+
+/* h2 {
+  color: #aaa;
+  font-size: 7em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.6em 0;
+  text-align: center;
+}  */
+
+
+/*<-------------------------------------------------- LEGACY --------------------------------------------------------->*/
+
+.legacy {
+  position: absolute;
+  color: #fff;
+  top: 670px;
+  width: 100%;
+  background: linear-gradient(to right, #00093c, #000000);
+  height: 720px;
+}
+
+.legacy-head {
+  font-family: "Alegreya SC", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  padding: 25px;
+  font-size: 50px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.legacy-head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.legacy-head:hover::before {
+  left: 100%;
+}
+
+.legacy p {
+  font-family: 'Alegreya', sans-serif;
+  align-content: center;
+  padding-top: 65px;
+  padding-left: 120px;
+  font-size: 20px;
+  padding-right: 85px;
+}
+
+/*<--------------------------------------------- FOUNDERS CARD -------------------------------------------------------->*/
+.founders {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 1383px;
+  background: linear-gradient(to right, #000311, #2d0b00);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#founders {
+  font-family: "Alegreya SC", sans-serif;
+  padding: 15px 0px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  backdrop-filter: blur(10px);
+  top: 0;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  height: 70px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#founders::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+#founders:hover::before {
+  left: 100%;
+}
+
+.cards {
+  display: flex;
+  top: 190px;
+  position: absolute;
+}
+
+.card,
+.card02,
+.card03 {
+  margin-left: 195px;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.front,
+.back,
+.front02,
+.back02,
+.front03,
+.back03 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.back,
+.back02,
+.back03 {
+  text-align: center;
+  background-color: #BDBDBD;
+  transform: rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(360deg);
+}
+
+.card02:hover .front02 {
+  transform: rotateY(180deg);
+}
+
+.card02:hover .back02 {
+  transform: rotateY(360deg);
+}
+
+.card03:hover .front03 {
+  transform: rotateY(180deg);
+}
+
+.card03:hover .back03 {
+  transform: rotateY(360deg);
+}
+
+#OWNER,
+#BA,
+#CEO {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quantico', sans-serif;
+}
+
+#Ba-Portfolio {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 20%;
+  color: white;
+  font-size: 25px;
+}
+
+#Ba-Portfolio:hover {
+  border: 2px solid rgb(88, 14, 14);
+}
+
+.card02 p {
+  text-align: center;
+}
+
+/*<------------------------------------------------ QUOTE FORM -------------------------------------------------------------->*/
+
+.quote-form-div {
+  width: 1343px;
+  height: 130vh;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 1989px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #00093c, #000000);
+}
+
+#quote-head {
+  font-family: "Alegreya SC", sans-serif;
+  width: 98vw;
+  padding: 15px 0px;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+#quote-head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 13%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+#quote-head:hover::before {
+  left: 100%;
+}
+
+.quote-para {
+  font-size: 1.7rem;
+  width: 85vw;
+  margin-top: 25px;
+  position: relative;
+  left: 155px;
+  display: flex;
+  color: white;
+  font-family: 'Courier Prime', sans-serif;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.quote-para input {
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-left: 10px;
+  width: 150px;
+  background-color: transparent;
+  color: grey;
+  font-family: 'Courier Prime', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.quote-para input:hover {
+  background-color: rgb(23, 30, 99);
+}
+
+.quote-para-drop {
+  width: 130px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: #52545f;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.quote-para-drop option {
+  font-family: 'Courier Prime', sans-serif;
+  background-color: black;
+}
+
+.quote-send {
+  padding: 10px;
+  border-radius: 10%;
+  margin-top: 15px;
+  position: relative;
+  left: 600px;
+  width: 60px;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid grey;
+  background-color: transparent;
+  color: white;
+}
+
+.quote-send:hover {
+  border-color: rgb(40, 157, 235);
+}
+
+/*<------------------------------------------------- GALLERY ---------------------------------------------------------------------------->*/
+.Gallery {
+  z-index: -1;
+  background: linear-gradient(to right, #000000, #2d0b00);
+  width: 1343px;
+  height: 930px;
+  position: relative;
+  top: 2704px;
+}
+
+.Gallery-head {
+  font-size: 15px;
+  font-family: "Alegreya SC", sans-serif;
+  height: 120px;
+  width: 98vw;
+  background-color: black;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.Gallery-head h1 {
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  left: 490px;
+  top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.gallery {
+  z-index: 0;
+  width: 50vw;
+  position: relative;
+  top: 160px;
+  left: 345px;
+  display: grid;
+  column-gap: 40px;
+  row-gap: 60px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+.gallery-para {
+  font-size: 1.7rem;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+
+/*<------------------------------------------------ FOOTER -------------------------------------------------------------->*/
+
+footer {
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 4000px;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-family: 'Poppins', sans-serif;
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footer-col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col ul:hover {
+  color: rgb(40, 157, 235);
+}
+
+#footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-email-id {
+  width: fit-content;
+  margin: 20px 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.footer-form .bx {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .bx {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.social-icons .bx {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 1px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+.footer-underline span {
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}

@@ -1,0 +1,24 @@
+    
+       --- G.F.S.S V1 21-4-24 --- 
+	
+WEBSITE PLAN :
+
+	-- INDEX PAGE / HOME PAGE 
+	-- SERVICES PAGE 
+	-- PRODUCTS PAGE
+	-- ABOUT US PAGE
+	-- CONTACT US PAGE
+	-- LOGIN PAGE
+________________________________________________
+
+CHANGES MADE ON THIS DAY :
+
+LEGACY CREATED ON HOME PAGE
+FOUNDERS CREATED ON HOME PAGE
+
+HOME :
+	- Navbar
+	- Legacy
+	- Founders
+		- 3 Founder Flip Cards
+	- Footer
