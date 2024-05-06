@@ -7,3 +7,14 @@ function autocopy() {
     
     endname.value = startname.value;
 };
+
+function digitalClock()
+{
+  var date, time;
+	date = new Date()
+	time = date.toLocaleTimeString()	
+	document.getElementById("clock").innerHTML = time;
+}
+setInterval(function(){
+  digitalClock()
+},1000)
