@@ -48,7 +48,6 @@ body{
 
 body {
   font-family: "Bebas Neue", sans-serif;
-  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,90 +114,8 @@ body {
   text-align: center;
   padding: 0px;
   font-size: 30px;
+  cursor: pointer;
 }
-
-
-/* ----- Carousel ----- */
-
-/* .wrap {
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  left: -100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  transform: translateX(100%);
-}
-.carousel.is-reversing {
-  transform: translateX(-100%);
-}
-.carousel.is-set {
-  transform: none;
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-@media (min-width: 30em) {
-  .carousel {
-    left: -33.33333%;
-    transform: translateX(33.33333%);
-  }
-  .carousel.is-reversing {
-    transform: translateX(-33.33333%);
-  }
-}
-
-@media (min-width: 40em) {
-  .carousel {
-    left: -20%;
-    transform: translateX(20%);
-  }
-  .carousel.is-reversing {
-    transform: translateX(-20%);
-  }
-}
-
-/* ----- Seats ----- */
-
-/* .carousel-seat {
-  background: #ddd;
-  flex: 1 0 100%;
-  order: 2;
-}
-.carousel-seat:nth-child(even) {
-  background: #d5d5d5;
-}
-
-@media (min-width: 30em) {
-  .carousel-seat {
-    flex-basis: 33.33333%;
-  }
-}
-
-@media (min-width: 40em) {
-  .carousel-seat {
-    flex-basis: 20%;
-  }
-}
-
-.carousel-seat.is-ref {
-  order: 1;
-}
-
-/* ----- Presentation ----- */
-
-/* h2 {
-  color: #aaa;
-  font-size: 7em;
-  font-weight: normal;
-  margin: 0;
-  padding: 0.6em 0;
-  text-align: center;
-}  */
-
 
 /*<-------------------------------------------------- LEGACY --------------------------------------------------------->*/
 
@@ -208,7 +125,6 @@ body {
   top: 670px;
   width: 100%;
   background: linear-gradient(to right, #00093c, #000000);
-  height: 720px;
 }
 
 .legacy-head {
@@ -222,21 +138,6 @@ body {
   border: 2px solid rgba(255, 255, 255, .2);
 }
 
-.legacy-head::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100vw;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-  transition: .5s;
-}
-
-.legacy-head:hover::before {
-  left: 100%;
-}
-
 .legacy p {
   font-family: 'Alegreya', sans-serif;
   align-content: center;
@@ -244,6 +145,7 @@ body {
   padding-left: 120px;
   font-size: 20px;
   padding-right: 85px;
+  margin-bottom: 109px;
 }
 
 /*<--------------------------------------------- FOUNDERS CARD -------------------------------------------------------->*/
@@ -251,20 +153,16 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
   top: 1383px;
   background: linear-gradient(to right, #000311, #2d0b00);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 #founders {
   font-family: "Alegreya SC", sans-serif;
   padding: 15px 0px;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-  backdrop-filter: blur(10px);
+  border-top: 2px solid rgb(255, 255, 255, .2);
+  border-bottom: 2px solid rgb(255, 255, 255, .2);
+  background-color: black;
   top: 0;
   color: #fff;
   position: absolute;
@@ -272,24 +170,8 @@ body {
   display: flex;
   font-size: 50px;
   align-items: center;
-  height: 70px;
   flex-wrap: nowrap;
   justify-content: space-around;
-}
-
-#founders::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100vw;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-  transition: .5s;
-}
-
-#founders:hover::before {
-  left: 100%;
 }
 
 .cards {
@@ -319,6 +201,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,11 +274,11 @@ body {
 /*<------------------------------------------------ QUOTE FORM -------------------------------------------------------------->*/
 
 .quote-form-div {
-  width: 1343px;
+  width: 134rem;
   color: white;
   text-align: center;
   position: absolute;
-  top: 1972px;
+  top: 2902px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, #00093c, #000000);
@@ -403,34 +286,19 @@ body {
 
 #quote-head {
   font-family: "Alegreya SC", sans-serif;
-  width: 98vw;
+  width: 134rem;
   padding: 15px 0px;
   font-size: 50px;
   background-color: black;
   color: white;
   text-align: center;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-}
-
-#quote-head::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 13%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-  transition: .5s;
-}
-
-#quote-head:hover::before {
-  left: 100%;
+  border-top: 2px solid rgb(255, 255, 255, .2);
+  border-bottom: 2px solid rgb(255, 255, 255, .2);
 }
 
 .quote-para {
   font-size: 1.7rem;
-  width: 85vw;
+  width: 106.5rem;
   margin-top: 25px;
   position: relative;
   left: 155px;
@@ -478,9 +346,10 @@ body {
   padding: 10px;
   border-radius: 10%;
   margin-top: 15px;
+  margin-bottom: 15px;
   position: relative;
   left: 600px;
-  width: 60px;
+  width: 8rem;
   font-size: 25px;
   text-decoration: none;
   border: 2px solid grey;
@@ -496,20 +365,20 @@ body {
 .Gallery {
   z-index: -1;
   background: linear-gradient(to right, #000000, #2d0b00);
-  width: 1343px;
+  width: 134rem;
   height: 930px;
   position: relative;
-  top: 2704px;
+  top: 1990px;
 }
 
 .Gallery-head {
   font-size: 15px;
   font-family: "Alegreya SC", sans-serif;
   height: 120px;
-  width: 98vw;
+  width: 134rem;
   background-color: black;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 2px solid rgb(255, 255, 255, .2);
+  border-bottom: 2px solid rgb(255, 255, 255, .2);
 }
 
 .Gallery-head h1 {
@@ -527,17 +396,19 @@ body {
 
 .gallery {
   z-index: 0;
-  width: 50vw;
+  width: 92vw;
   position: relative;
   top: 160px;
-  left: 345px;
+  left: 83px;
   display: grid;
   column-gap: 40px;
-  row-gap: 60px;
+  row-gap: 20px;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
   margin: -1rem -1rem;
+  align-content: center;
+  align-items: end;
 }
 
 .gallery-item {
@@ -561,7 +432,7 @@ body {
 
 .gallery-para {
   font-size: 1.7rem;
-  margin-top: 20px;
+  margin-top: 30px;
   color: white;
   text-align: center;
 }
@@ -573,7 +444,7 @@ footer {
   z-index: 0;
   width: 100%;
   position: absolute;
-  top: 4000px;
+  top: 3675px;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
   padding: 100px 0 30px;
