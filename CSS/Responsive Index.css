@@ -1,93 +1,32 @@
-@media only screen and (max-width:750px) {
+@media (max-width:1280px) and (min-width:750px){
+    html{
+        width: 81rem;
+    }
+    
     body {
-        background-size: auto;
+        background: url(../IMAGES/Advert01.jpg);
+        width: 81rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .header{
+        right: 53.7rem;
+        width: 60%;
+        padding: 2px 0px;
+    }
+    .navbar a{
+        font-size: 20px;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
-    .navbar a {
-        margin-left: 20px;
-        font-size: 12px;
+    #clock{
+        font-size: 20px;
+        width:100px;
     }
-
-    .logo {
-        left: 15px;
-    }
-
-    .header {
-        padding: 3px 26px;
-    }
-
-    .history p {
-        padding-top: 40px;
-        font-size: 12px;
-    }
-
-    .history h1 {
+    
+    .legacy-head{
         padding: 0px;
-        font-size: 30px;
+        font-size: 40px;
     }
-}
-
-@media only screen and (max-width:2640px) and (min-width:1200px) {}
-
-@media only screen and (max-width:1200px) and (min-width:900px) {
-
-    .card,
-    .card02,
-    .card03 {
-        margin-left: 100px;
-    }
-}
-
-@media only screen and (max-width:900px) and (min-width:750px) {
-
-    .card,
-    .card02,
-    .card03 {
-        margin-left: 45px;
-    }
-}
-
-@media only screen and (max-width:750px) and (min-width:350px) {
-
-    .legacy-head {
-        width: 566px;
-    }
-    .legacy {
-        width:152vw;
-
-    }
-    .legacy p{
-        width:100vw;
-        padding-top: 10px;
-        padding-left: 100px;
-        font-size: 17px;
-        padding-right: 0px;
-    }
-
-    .card,
-    .card02,
-    .card03 {
-        margin-left: 40px;
-        width: 150px;
-        height: 150px;
-    }
-
-    #founders{
-        width: 154vw;
-    }
-
-    .founders{
-        width: 152vw;
-    }
-
-    #OWNER, #BA, #CEO {
-        top: 182px;
-        left: 0px;
-        font-size: 22px;
-    }
-
-    .footer{
-        width: 152%;
-    }
-
 }
