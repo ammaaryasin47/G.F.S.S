@@ -17,4 +17,12 @@ function digitalClock()
 }
 setInterval(function(){
   digitalClock()
-},1000)
+},1000);
+
+document.addEventListener("DOMContentLoaded", function() {
+  var namePlates = document.querySelectorAll(".NamePlate h1");
+
+  namePlates.forEach(function(namePlate) {
+    namePlate.style.left = "3rem"; // Slide in from the left
+  });
+});

@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Bebas Neue", sans-serif;
   min-height: 100vh;
@@ -104,4 +108,49 @@ body {
     font-size: 45px;
     
 }
+.counter-container{
+  left: 0.8rem;
+  font-size: 2rem;
+  top: 18rem;
+  position: relative;
+  width: 135rem;
+  color: white;
+}
+
+.counter-row1{
+  display: flex;
+  justify-content: space-around;
+}
+.col-md-4 {
+  text-align: center;
+  padding: 5rem;
+  border-right: 1px dashed white;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid white;
+}
+
+/* .counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+} */
+
+i {
+  font-size: 20px;
+}
+
+.counter {
+  animation: countup 5s infinite alternate;
+}
+
+@keyframes countup {
+  from {
+    content: '0';
+  }
+  to {
+    content: '2,523';
+  }
+}
+
 

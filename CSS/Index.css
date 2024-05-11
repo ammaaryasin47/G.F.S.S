@@ -33,10 +33,6 @@ html{
   font-size: 62.5%;
 }
 
-body{
-  background: url(../IMAGES/Home01.jpg);
-}
-
 .Terms-Conditions {
   color: white;
   margin: 0px 1rem;
@@ -47,21 +43,43 @@ body{
 }
 
 body {
+  background-repeat: no-repeat;
   font-family: "Bebas Neue", sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.Home {
+.NamePlate{
   position: relative;
-  top: 10rem
+}
+
+.NamePlate h1{
+  font-family: "Quantico", sans-serif;
+  width: 25rem;
+  top: 15rem;
+  left: 3rem;
+  mix-blend-mode: color-dodge;
+  position: relative;
+  width: 22rem;  
+  color: white;
+  transform: skewY(-19deg);
+  font-size: 7rem;
+  margin:0rem;
+  opacity: 0.2;
+  transition: left 0.5s ease;
 }
 
 #Guardian{
-  color: white;
-  font-size: 7rem;
-  margin:0rem
+  transform: skewY(-19deg);
+}
+#Fortitude{
+  transform: skewY(-18deg);
+}
+#Security{
+  transform: skewY(-18deg);
+}
+#Services{
+  transform: skewY(-19deg);
 }
 /*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
 
@@ -368,7 +386,7 @@ body {
 }
 
 .quote-send:hover {
-  border-color: rgb(40, 157, 235);
+  color: rgb(40, 157, 235);
 }
 
 /*<------------------------------------------------- GALLERY ---------------------------------------------------------------------------->*/
@@ -378,7 +396,7 @@ body {
   width: 134rem;
   height: 93rem;
   position: relative;
-  top: 199rem;
+  top: 159rem;
 }
 
 .Gallery-head {
@@ -429,6 +447,7 @@ body {
 }
 
 .gallery-image {
+  width: 20rem;
   display: block;
   width: 100%;
   height: 100%;

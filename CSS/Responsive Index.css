@@ -1,17 +1,16 @@
-@media (max-width:1280px) and (min-width:750px){
+@media (max-width:1280px) and (min-width:1024px){
     html{
-        width: 81rem;
+        width: 134rem;
     }
     
     body {
-        background: url(../IMAGES/Advert01.jpg);
-        width: 81rem;
+        width: 134rem;
         background-size: contain;
+        background-position: top;
         background-repeat: no-repeat;
     }
     .header{
-        right: 53.7rem;
-        width: 60%;
+        width: 100%;
         padding: 2px 0px;
     }
     .navbar a{
@@ -24,9 +23,109 @@
         font-size: 20px;
         width:100px;
     }
-    
+    .legacy {
+        width: 131rem;
+    }
     .legacy-head{
         padding: 0px;
         font-size: 40px;
+    }
+
+    .founders{
+        top: 132rem;
+        width: 131rem;
+    }
+
+    .cards{
+        top: 12rem;
+    }
+
+    .Gallery{
+        top: 165.6rem;
+    }
+
+    .quote-form-div{
+        top: 276.2rem;
+    }
+
+    footer{
+        top: 353.5rem;
+        width: 131rem;
+    }
+}
+
+@media (max-width:1023px) and (min-width:769px){
+    .body{
+        background-size: 134rem;
+    }
+    .header{
+        right: 57rem;
+        width: 77rem;
+        padding: 0px 0px;
+    }
+    .navbar a{
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #clock{
+        font-size: 20px;
+        width:100px;
+    }
+
+   .NamePlate h1{
+        top: 10rem;
+        font-size: 5rem;
+    }
+    .founders{
+        width: 103rem;
+        height: 60.7rem;
+    }
+    .legacy-head {
+        width: 77rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    .legacy{
+        top: 43rem;
+    }
+    .legacy p{
+    padding-top: 3.5rem;
+    padding-left: 8rem;
+    font-size: 1.8rem;
+    padding-right: 6.5rem;
+    margin-bottom: 6.9rem;
+    }
+    .founders{
+        width: 77rem;
+        top: 101rem;
+    }
+    #founders{
+        font-size: 3rem;
+        width: 77rem;
+        padding: 0px;
+    }
+    .cards{
+        top: 10rem;
+    }
+
+    .card, .card02, .card03{
+        margin-left: 7.5rem;
+        width: 15rem;
+        height: 25rem;
+    }
+    .Gallery-head {
+        height: 6rem;
+        width: 77rem;
+    }
+    .Gallery-head h1{
+        left: 25rem;
+        top: 1rem;
+        font-size: 3rem;
+    }
+
+    footer{
+        width: 103rem;
     }
 }
