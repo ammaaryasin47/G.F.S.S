@@ -21,6 +21,11 @@
 /* FONT NAME : Alegreya SC  */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap');
 
+:root{
+  --bg-maroon: linear-gradient(to right, #000311, #2d0b00);
+  --bg-blue: linear-gradient(to right, #00093c, #000000);
+}
+
 
 * {
   box-sizing: border-box;
@@ -71,7 +76,10 @@ body {
 
 #Guardian{
   transform: skewY(-19deg);
+  border-color: #fff;
+  box-shadow: none;
 }
+
 #Fortitude{
   transform: skewY(-18deg);
 }
@@ -152,28 +160,59 @@ body {
   color: #fff;
   top: 67rem;
   width: 100%;
-  background: linear-gradient(to right, #00093c, #000000);
+  background: var(--bg-blue);
 }
 
 .legacy-head {
-  font-family: "Alegreya SC", sans-serif;
+  width: 51rem;
+  position: relative;
+  left: 45rem;
+  font-family: "Quantico", sans-serif;
   display: flex;
-  justify-content: space-around;
-  background-color: #000;
-  padding: 2.5rem;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 0rem 2.5rem;
   font-size: 5rem;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, .2);
+  overflow: hidden;
+  cursor:pointer;
 }
 
+.legacy-head::before,
+  .legacy-head::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #1f3195;
+    transition: width 1s;
+  }
+
+  .legacy-head::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .legacy-head::after {
+    transform: scaleX(-1);
+    transform-origin: right;
+  }
+
+  .legacy-head:hover::before,
+  .legacy-head:hover::after {
+    width: 100%;
+  }
+
 .legacy p {
-  font-family: 'Alegreya', sans-serif;
+  font-family: 'Quantico', sans-serif;
   align-content: center;
   padding-top: 6.5rem;
   padding-left: 12rem;
   font-size: 2rem;
   padding-right: 8.5rem;
-  margin-bottom: 10.9rem;
+  margin-bottom: 7rem;
+  transition: 0.4s ease;
 }
 
 /*<--------------------------------------------- FOUNDERS CARD -------------------------------------------------------->*/
@@ -182,25 +221,51 @@ body {
   width: 100%;
   height: 100%;
   top: 138.3rem;
-  background: linear-gradient(to right, #000311, #2d0b00);
+  background: var(--bg-maroon);
 }
 
 #founders {
-  font-family: "Alegreya SC", sans-serif;
-  padding: 1.5rem 0rem;
-  border-top: 2px solid rgb(255, 255, 255, .2);
-  border-bottom: 2px solid rgb(255, 255, 255, .2);
-  background-color: black;
+  overflow: hidden;
+  font-family: "Quantico", sans-serif;
   top: 0;
+  left: 52rem;
   color: #fff;
   position: absolute;
-  width: 100%;
+  width: 36rem;
   display: flex;
   font-size: 5rem;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+
+#founders::before,
+#founders::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #431202;
+  transition: width 1s;
+}
+
+#founders::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#founders::after {
+  transform: scaleX(-1);
+  transform-origin: right;
+}
+
+#founders:hover::before,
+#founders:hover::after {
+  width: 100%;
+}
+
 
 .cards {
   display: flex;
@@ -299,6 +364,110 @@ body {
   text-align: center;
 }
 
+/*<------------------------------------------------- GALLERY ---------------------------------------------------------------------------->*/
+.Gallery {
+  z-index: -1;
+  background: var(--bg-blue);
+  width: 134rem;
+  height: 93rem;
+  position: relative;
+  top: 159rem;
+}
+
+.Gallery-head {
+  font-size: 1.5rem;
+  font-family: "QUANTICO", sans-serif;
+  height: 12rem;
+  width: 134rem;
+}
+
+.Gallery-head h1 {
+  overflow: hidden;
+  font-size: 4.5rem;
+  color: white;
+  position: absolute;
+  left: 49rem;
+  top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Gallery-head h1::before,
+.Gallery-head h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #1f3195;
+  transition: width 1s;
+}
+
+.Gallery-head h1::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.Gallery-head h1::after {
+  transform: scaleX(-1);
+  transform-origin: right;
+}
+
+.Gallery-head h1:hover::before,
+.Gallery-head h1:hover::after {
+  width: 100%;
+}
+
+
+
+.gallery {
+  z-index: 0;
+  width: 92vw;
+  position: relative;
+  top: 16rem;
+  left: 8.3rem;
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+  margin: -1rem -1rem;
+  align-content: center;
+  align-items: end;
+}
+
+.gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 20rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+.gallery-para {
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  color: white;
+  text-align: center;
+}
+
 /*<------------------------------------------------ QUOTE FORM -------------------------------------------------------------->*/
 
 .quote-form-div {
@@ -309,20 +478,47 @@ body {
   top: 290.2rem;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #00093c, #000000);
+  background: var(--bg-maroon)
 }
 
 #quote-head {
   font-family: "Alegreya SC", sans-serif;
-  width: 134rem;
-  padding: 15px 0px;
+  width: 52rem;
+  position: relative;
+  left: 42rem;
+  overflow: hidden;
   font-size: 5rem;
-  background-color: black;
   color: white;
   text-align: center;
-  border-top: 2px solid rgb(255, 255, 255, .2);
-  border-bottom: 2px solid rgb(255, 255, 255, .2);
 }
+
+#quote-head::before,
+#quote-head::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #1f3195;
+  transition: width 1s;
+}
+
+#quote-head::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#quote-head::after {
+  transform: scaleX(-1);
+  transform-origin: right;
+}
+
+#quote-head:hover::before,
+#quote-head:hover::after {
+  width: 100%;
+}
+
 
 .quote-para {
   font-size: 1.7rem;
@@ -386,86 +582,8 @@ body {
 }
 
 .quote-send:hover {
-  color: rgb(40, 157, 235);
+  border-color: rgb(40, 157, 235);
 }
-
-/*<------------------------------------------------- GALLERY ---------------------------------------------------------------------------->*/
-.Gallery {
-  z-index: -1;
-  background: linear-gradient(to right, #000000, #2d0b00);
-  width: 134rem;
-  height: 93rem;
-  position: relative;
-  top: 159rem;
-}
-
-.Gallery-head {
-  font-size: 1.5rem;
-  font-family: "Alegreya SC", sans-serif;
-  height: 12rem;
-  width: 134rem;
-  background-color: black;
-  border-top: 2px solid rgb(255, 255, 255, .2);
-  border-bottom: 2px solid rgb(255, 255, 255, .2);
-}
-
-.Gallery-head h1 {
-  font-size: 4.5rem;
-  color: white;
-  position: absolute;
-  left: 49rem;
-  top: 3rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.gallery {
-  z-index: 0;
-  width: 92vw;
-  position: relative;
-  top: 16rem;
-  left: 8.3rem;
-  display: grid;
-  column-gap: 4rem;
-  row-gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
-  margin: -1rem -1rem;
-  align-content: center;
-  align-items: end;
-}
-
-.gallery-item {
-  flex: 1 0 24rem;
-  margin: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-
-.gallery-image {
-  width: 20rem;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-  transform: scale(1.15);
-}
-
-.gallery-para {
-  font-size: 1.7rem;
-  margin-top: 3rem;
-  color: white;
-  text-align: center;
-}
-
 
 /*<------------------------------------------------ FOOTER -------------------------------------------------------------->*/
 
@@ -473,7 +591,7 @@ footer {
   z-index: 0;
   width: 100%;
   position: absolute;
-  top: 367.5rem;
+  top: 363.5rem;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
   padding: 10rem 0 3rem;

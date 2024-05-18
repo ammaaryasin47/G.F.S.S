@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G.F.S.S Services</title>
-    <link rel='stylesheet' href="../CSS/Services.css">
-    <style src="../JAVASCRIPT/Services.js"></style>
+    <link rel='stylesheet' href="../CSS/Services.css"> <!--CSS FILE -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- BOXICONS CDN -->
 </head>
 
 <body>
+    <!------------------------------------------------------------- NAVBAR ----------------------------------------------->
     <nav>
         <header class="header">
             <a hef="#" class="logo"><img src="../IMAGES/Logo.png" height="50px"></a> <!-- LOGO -->
@@ -25,37 +26,175 @@
             </nav>
         </header>
     </nav>
-    <div class="intro-para">
-        <p>G<span style="font-weight: bold;"></span>uardian Fortitude Security Services</span> Offers A Comprehensive Range Of Services
-            Designed To Ensure Peace Of Mind. From Expertly Trained Security Personnel To Cutting-Edge Technology
-            Solutions, We Pride Ourselves On Delivering Unmatched Protection In Every Aspect.
-        </p>
-        <br>
-        <p>Our Team Is Equipped With The
-            Expertise And Resources To Exceed Your Expectations. At Guardian Fortitude, We Fortify The Present To
-            Safeguard The Future.
-        </p>
-    </div>
-    <div onload="counterUp" class="counter-container">
-        <div class="counter-row1">
-          <div class="col-md-4" >
-            <h1><span id="counter" class="counter"></span></h1>
-            <h3>Customers</h3>
-            <i class='bx bx-user'></i>
-          </div> 
-          <div class="col-md-4">
-            <h1><span class="counter">63,075</span></h1>
-            <h3>Total Web Pages</h3>
-            <i class="fa fa-desktop"></i>
-          </div>
-          <div class="col-md-4">
-            <h1><span class="counter">12,218</span></h1>
-            <h3>Cups Of Coffee</h3>
-            <i class="fa fa-coffee"></i>
-          </div>
+    <!------------------------------------------------------------- SLIDER ------------------------------------------------>
+    <section class="sec01">
+        <div id="slider">
+            <div class="slidervalue">At Guardian Fortitude We</div>
+            <div class="slidervalue" id="sliderValue"></div>
         </div>
-      </div>
 
+        <!--------------------------------------------------------- COUNTER ------------------------------------------------>
+        <div class="counter-container">
+            <div class="countercol">
+                <h1><span id="custcounter" class="custcounter"></span></h1>
+                <h3>CURRENT USERS</h3>
+                <i class='bx bxs-user-pin'></i>
+            </div>
+            <div class="countercol">
+                <h1><span id="guardscounter" class="counter"></span></h1>
+                <h3>GUARDS ON DUTY</h3>
+                <i class='bx bx-shield-alt-2'></i>
+            </div>
+            <div class="countercol">
+                <h1><span id="servercounter" class="counter"></span></h1>
+                <h3>SERVERS SECURED</h3>
+                <i class='bx bx-server'></i>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------- SERVICES ------------------------------------------------->
+    <div class="services">
+
+        <p class="service-intro">Our Premier Security Agency Offers Highly Trained Bodyguards, Ensuring Top-Tier
+            Personal
+            Protection For Our
+            Clients. Our Bodyguards Are Former Military And Law Enforcement Professionals, Adept In Threat Assessment
+            And
+            Crisis Management. Equipped With Advanced Defensive Skills And State-Of-The-Art Technology, They Provide
+            Round-The-Clock Surveillance And Security. Discreet Yet Vigilant, Our Bodyguards Blend Seamlessly Into Any
+            Environment While Maintaining A Strong Protective Presence. Trust Us For Your Safety And Peace Of Mind,
+            Knowing
+            You're Safeguarded By The Best In The Industry.</p>
+    </div>
+    <!------------------------------------------------------- PRICING TABLE ------------------------------------------------>
+    <div class="pricetablediv">
+        <div class="pricing-container">
+            <h1 class="price-head">Security Service Pricing Chart</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../IMAGES/Services/Cyber Security.jpg" alt="Cyber Security">
+                    <h2>Cyber Security</h2>
+                    <p>Secure Your Devices And Servers With Our Professional Cyber Team</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $200/month</p>
+                        <p><i class='bx bx-group'></i> Family: $350/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $1,800/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Armed Security.png" alt="Armed Security Guard">
+                    <h2>Armed Security Guard</h2>
+                    <p>Armed guards for high-risk areas or events.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $500/month</p>
+                        <p><i class='bx bx-group'></i> Family: $900/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $3,200/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Unarmed Security.jpg" alt="Unarmed Security Guard">
+                    <h2>Unarmed Security Guard</h2>
+                    <p>Unarmed guards for general security needs.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $300/month</p>
+                        <p><i class='bx bx-group'></i> Family: $500/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $2,100/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Event Security.jpg" alt="Event Security">
+                    <h2>Event Security</h2>
+                    <p>Security Services Tailored For Events And Gatherings.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $100/event</p>
+                        <p><i class='bx bx-group'></i> Family: $200/event</p>
+                        <p><i class='bx bx-building'></i> Organization: $500/event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Survelliance.jpg" alt="Surveillance Monitoring">
+                    <h2>Surveillance Monitoring</h2>
+                    <p>24/7 Monitoring Of Security Cameras And Alarms.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $100/month</p>
+                        <p><i class='bx bx-group'></i> Family: $150/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $1,500/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Executive Protection.jpg" alt="Executive Protection">
+                    <h2>Executive Protection</h2>
+                    <p>Personal Bodyguard Services For VIPs And Executives.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $1,000/month</p>
+                        <p><i class='bx bx-group'></i> Family: $1,500/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $5,000/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Detective.jpg" alt="Detective">
+                    <h2>Detective Services</h2>
+                    <p>Leave Background Checks & Interrogations On Us.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $150/month</p>
+                        <p><i class='bx bx-group'></i> Family: $250/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $2,800/month</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/consultation.jpg" alt="Consultation Services">
+                    <h2>Consultation Services</h2>
+                    <p>Security Risk Assessments And Strategy Planning.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $50/hour</p>
+                        <p><i class='bx bx-group'></i> Family: $80/hour</p>
+                        <p><i class='bx bx-building'></i> Organization: $200/hour</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Vehical convoy.jpg" alt="Vehicle Convoy Service">
+                    <h2>Vehicle Convoy Service</h2>
+                    <p>Secure transport with a convoy of vehicles.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $600/transport</p>
+                        <p><i class='bx bx-group'></i> Family: $1,000/transport</p>
+                        <p><i class='bx bx-building'></i> Organization: $4,000/transport</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Assault Unit.jpg" alt="Special Assault Team">
+                    <h2>Special Assault Team</h2>
+                    <p>Elite team for high-risk operations and interventions.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $2,000/mission</p>
+                        <p><i class='bx bx-group'></i> Family: $3,500/mission</p>
+                        <p><i class='bx bx-building'></i> Organization: $10,000/mission</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/Extraction.jpg" alt="Extraction Services">
+                    <h2>Extraction Services</h2>
+                    <p>Secure and swift extraction from hostile environments.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $3,000/operation</p>
+                        <p><i class='bx bx-group'></i> Family: $5,000/operation</p>
+                        <p><i class='bx bx-building'></i> Organization: $15,000/operation</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../IMAGES/Services/K9 Unit.jpg" alt="K9 Unit">
+                    <h2>K9 Unit</h2>
+                    <p>Specialized K9 units for detection and security.</p>
+                    <div class="price">
+                        <p><i class='bx bxs-user'></i> Individual: $1,500/month</p>
+                        <p><i class='bx bx-group'></i> Family: $2,500/month</p>
+                        <p><i class='bx bx-building'></i> Organization: $7,000/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/Services.js"></script>
 </body>
 
 </html>
