@@ -1,61 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   let custUpto = 0;
-//   let guardsUpto = 0;
-//   let dispatchUpto = 0;
-//   let safehouseUpto = 0;
-//   let serverUpto = 0;
-//   let consultUpto = 0;
-
-//   const custCounts = setInterval(() => {
-//     let custCount = document.getElementById("custcounter");
-//     custCount.innerHTML = ++custUpto;
-//     if (custUpto === 100000) {
-//       clearInterval(custCounts);
-//     }
-//   }, 10);
-
-//   const guardsCounts = setInterval(() => {
-//     let guardsCount = document.getElementById("guardscounter");
-//     guardsCount.innerHTML = ++guardsUpto;
-//     if (guardsUpto === 3000) {
-//       clearInterval(guardsCounts);
-//     }
-//   }, 10);
-
-//   const dispatchCounts = setInterval(() => {
-//     let dispatchCount = document.getElementById("dispatchcounter");
-//     dispatchCount.innerHTML = ++dispatchUpto;
-//     if (dispatchUpto === 1000) {
-//       clearInterval(dispatchCounts);
-//     }
-//   }, 10);
-
-//   const safehouseCounts = setInterval(() => {
-//     let safehouseCount = document.getElementById("safehousecounter");
-//     safehouseCount.innerHTML = ++safehouseUpto;
-//     if (safehouseUpto === 1200) {
-//       clearInterval(safehouseCounts);
-//     }
-//   }, 10);
-
-//   const serverCounts = setInterval(() => {
-//     let serverCount = document.getElementById("servercounter");
-//     serverCount.innerHTML = ++serverUpto;
-//     if (serverUpto === 800) {
-//       clearInterval(serverCounts);
-//     }
-//   }, 10);
-
-//   const consultCounts = setInterval(() => {
-//     let consultCount = document.getElementById("consultcounter");
-//     consultCount.innerHTML = ++consultUpto;
-//     if (consultUpto === 5000) { 
-//       clearInterval(consultCounts);
-//     }
-//   }, 10);
-// });
-
-
 document.addEventListener("DOMContentLoaded", () => {
   let custUpto = 0;
   let guardsUpto = 0;
@@ -129,3 +71,90 @@ function slide() {
 
 slide();
 setInterval(slide, 2000);
+
+//<--------------------------------------------------- GEOLOCATION ----------------------------------------------------->
+
+function getLocation() {
+  if (!navigator.geolocation) {
+    console.log('Geolocation API not supported by this browser.');
+  } else {
+    console.log('Checking location...');
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+
+function success(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  console.log('Latitude:', latitude);
+  console.log('Longitude:', longitude);
+  document.getElementById('Latid').value = latitude;
+  document.getElementById('Longid').value = longitude;
+  reverseGeocode(latitude, longitude);
+}
+
+function error() {
+  console.log('Geolocation error!');
+}
+
+function reverseGeocode(lat, lon) {
+  const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      if (data.address) {
+        const address = formatAddress(data.address);
+        document.getElementById('ADDRESSid').value = address;
+      } else {
+        console.log('Geocoding error: No address found');
+      }
+    })
+    .catch(error => console.log('Geocoding fetch error:', error));
+}
+
+function formatAddress(address) {
+  const road = address.road || '';
+  const neighbourhood = address.neighbourhood || '';
+  const suburb = address.suburb || '';
+  const city = address.city || address.town || address.village || '';
+  const state = address.state || '';
+  const postcode = address.postcode || '';
+  const country = address.country || '';
+
+  return [road, neighbourhood, suburb, city, state, postcode, country].filter(Boolean).join(', ');
+}
+
+function geocodeAddress() {
+  const address = document.getElementById('ADDRESSid').value;
+  if (!address.trim()) return; // Don't make a request for empty input
+
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      if (data.length > 0) {
+        const { lat, lon } = data[0];
+        document.getElementById('Latid').value = lat;
+        document.getElementById('Longid').value = lon;
+      } else {
+        console.log('Geocoding error: No coordinates found for the given address');
+      }
+    })
+    .catch(error => console.log('Geocoding fetch error:', error));
+}
+
+let typingTimer;
+const doneTypingInterval = 1000; // Time in ms, 1 second
+
+document.getElementById('ADDRESSid').addEventListener('input', () => {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(geocodeAddress, doneTypingInterval);
+});
+
+document.getElementById('ADDRESSid').addEventListener('keydown', () => {
+  clearTimeout(typingTimer);
+});
+
+document.getElementById('get-location').addEventListener('click', getLocation);
