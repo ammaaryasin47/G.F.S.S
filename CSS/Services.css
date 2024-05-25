@@ -350,19 +350,14 @@ i {
 /*<--------------------------------------------- FORM ENTRY ----------------------------------------------------------->*/
 
 .formEntry {
+  display: flex;
   color: white;
   background: url(../IMAGES/Services/Servicesecondary.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.formEntry h1 {
-  padding-top: 7rem;
-  text-align: center;
-  font-size: 5rem;
-  font-family: 'Abel', sans-serif;
+  justify-content: space-around;
 }
 
 .Userinfo {
@@ -370,6 +365,7 @@ i {
   left: 7rem;
   position: relative;
   margin-top: 7rem;
+  border-right: 2px dashed white;
 }
 
 .Userinfo h3 {
@@ -400,12 +396,12 @@ i {
 .COMPANY label,
 .EMAIL label,
 .PHONE label {
-  font-family: 'Abel',sans-serif;
+  font-family: 'Abel', sans-serif;
   background: none;
   position: relative;
-  left: 5rem;
+  left: 11rem;
   top: 1rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   transform: translateY(-50%);
   color: white;
   pointer-events: none;
@@ -413,13 +409,14 @@ i {
 }
 
 input:focus {
+  font-family: 'Abel', sans-serif;
   border: 2px solid white;
 }
 
 input:focus~label,
 input:valid~label {
-  top: 0;
-  left: 2rem;
+  top: -1rem;
+  left: 10rem;
   padding: 0.5rem;
 }
 
@@ -429,6 +426,7 @@ input:valid~label {
 #PHONEid {
   padding: 1rem;
   position: absolute;
+  left: 7rem;
   cursor: pointer;
   text-transform: uppercase;
   width: 30rem;
@@ -441,12 +439,18 @@ input:valid~label {
   outline: none;
 }
 
+/*<------------------------------------------------- LOCATION  ------------------------------------------------------->*/
+
 .Location {
+  font-family: 'Abel', sans-serif;
+  width: 50rem;
+  left: 7rem;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .Location h3 {
+  margin: 4rem 0rem;
   width: 39rem;
   position: relative;
   left: 5rem;
@@ -454,38 +458,71 @@ input:valid~label {
   font-size: 4rem;
 }
 
-.ADDRESSh6 {
-  width: 9rem;
+.ADDRESSh6,
+.LATh6,
+.LONGh6 {
+  font-family: 'Abel', sans-serif;
   color: black;
   display: flex;
   flex-direction: row;
   font-family: 'Abel';
   font-size: 2.5rem;
   position: relative;
-  margin-top: 2rem;
-  left: 3rem;
+  margin-top: 5rem;
+  right: 3rem;
   align-items: center;
 }
 
-/* #get-location {
+.ADDRESSh6 label,
+.LATh6 label,
+.LONGh6 label {
+  font-family: 'Abel', sans-serif;
+  background: none;
   position: relative;
-  top: 6rem;
-  left: 12rem;
-  text-align: center;
-  font-weight: bolder;
-  font-family: 'Abel';
-  width: 10rem;
-} */
+  left: 11rem;
+  top: 1rem;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+  transition: top 0.3s, left 0.3s, padding 0.3s;
+}
 
-/* CSS */
+input:focus~label,
+input:valid~label {
+  top: -1rem;
+  left: 10rem;
+  padding: 0.5rem;
+}
+
+#ADDRESSid,
+#LATid,
+#LONGid {
+  font-family: 'Abel', sans-serif;
+  padding: 1rem;
+  position: absolute;
+  left: 7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 30rem;
+  border: 2px solid #000;
+  background: transparent;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: white;
+  outline: none;
+}
+
 #get-location {
-  background-color: #c2fbd7;
+  margin: 4rem 12rem;
+  background-color: #333; /* Blackish background */
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(0, 0, 0, .5) 0 -25px 18px -14px inset, rgba(0, 0, 0, .25) 0 1px 2px, rgba(0, 0, 0, .25) 0 2px 4px, rgba(0, 0, 0, .25) 0 4px 8px, rgba(0, 0, 0, .25) 0 8px 16px, rgba(0, 0, 0, .25) 0 16px 32px; /* Blackish shades for shadow */
+  color: white; /* White text color */
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  font-family: 'Abel', sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -498,8 +535,26 @@ input:valid~label {
 }
 
 #get-location:hover {
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  box-shadow: rgba(0, 0, 0, .7) 0 -25px 18px -14px inset, rgba(0, 0, 0, .45) 0 1px 2px, rgba(0, 0, 0, .45) 0 2px 4px, rgba(0, 0, 0, .45) 0 4px 8px, rgba(0, 0, 0, .45) 0 8px 16px, rgba(0, 0, 0, .45) 0 16px 32px; /* Darker blackish shades for shadow on hover */
   transform: scale(1.05) rotate(-1deg);
+}
+.LATh6 label.moved,
+.LONGh6 label.moved {
+  top: -1rem;
+  left: 10rem;
+  padding: 0.5rem;
+}
+
+/*<------------------------------------------------ FORM EXIT  ---------------------------------------------------------->*/
+.formExit{
+  display: flex;
+  color: white;
+  background: url(../IMAGES/Services/Servicesecondary.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
 }
 
 /*<------------------------------------------------ FOOTER -------------------------------------------------------------->*/

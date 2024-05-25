@@ -88,10 +88,20 @@ function success(position) {
   const longitude = position.coords.longitude;
   console.log('Latitude:', latitude);
   console.log('Longitude:', longitude);
-  document.getElementById('Latid').value = latitude;
-  document.getElementById('Longid').value = longitude;
+
+  const latInput = document.getElementById('LATid');
+  const longInput = document.getElementById('LONGid');
+  
+  latInput.value = latitude;
+  longInput.value = longitude;
+
+  // Add a class to the labels to trigger the animation
+  document.querySelector('.LATh6 label').classList.add('moved');
+  document.querySelector('.LONGh6 label').classList.add('moved');
+  
   reverseGeocode(latitude, longitude);
 }
+
 
 function error() {
   console.log('Geolocation error!');
@@ -136,8 +146,17 @@ function geocodeAddress() {
     .then(data => {
       if (data.length > 0) {
         const { lat, lon } = data[0];
-        document.getElementById('Latid').value = lat;
-        document.getElementById('Longid').value = lon;
+        const latInput = document.getElementById('LATid');
+        const longInput = document.getElementById('LONGid');
+        
+        latInput.value = lat;
+        longInput.value = lon;
+
+        latInput.dispatchEvent(new Event('focus')); // Trigger focus to apply transition
+        latInput.dispatchEvent(new Event('input')); // Trigger input to apply transition
+
+        longInput.dispatchEvent(new Event('focus')); // Trigger focus to apply transition
+        longInput.dispatchEvent(new Event('input')); // Trigger input to apply transition
       } else {
         console.log('Geocoding error: No coordinates found for the given address');
       }
