@@ -197,26 +197,104 @@
     <div class="formEntry">
         <div class="Userinfo">
             <h3>USER INFORMATION</h3>
-            <h6 class="NAME"><input id="NAMEid" type="text" required><label>NAME</label></h6>
-            <h6 class="COMPANY"><input id="COMPANYid" type="text" required><label>ORGANISATION NAME</label></h6>
-            <h6 class="EMAIL"><input id="EMAILid" type="text" required><label>EMAIL ID</label></h6>
-            <h6 class="PHONE"> <input id="PHONEid" type="text" required><label>CONTACT</label></h6>
+            <h6 class="NAME">
+                <input id="NAMEid" type="text" required>
+                <label>NAME</label>
+            </h6>
+            <h6 class="COMPANY">
+                <input id="COMPANYid" type="text" required>
+                <label>ORGANISATION NAME</label>
+            </h6>
+            <h6 class="EMAIL">
+                <input id="EMAILid" type="text" required>
+                <label>EMAIL ID</label>
+            </h6>
+            <h6 class="PHONE">
+                <input id="PHONEid" type="text" required>
+                <label>CONTACT</label>
+            </h6>
         </div>
         <div class="Location">
             <h3>LOCATION</h3>
-            <h6 class="ADDRESSh6"><input id="ADDRESSid" type="text" required><label>ADDRESS</label></h6>
-            <h6 class="LATh6"><input id="LATid" type="text" disabled><label>LATITUDE</label></h6>
-            <h6 class="LONGh6"> <input id="LONGid" type="text" disabled><label>LONGITUDE</label></h6>
+            <h6 class="ADDRESSh6">
+                <input id="ADDRESSid" type="text" required>
+                <label>ADDRESS</label>
+            </h6>
+            <h6 class="LATh6">
+                <input id="LATid" type="text" disabled>
+                <label>LATITUDE</label>
+            </h6>
+            <h6 class="LONGh6">
+                <input id="LONGid" type="text" disabled>
+                <label>LONGITUDE</label>
+            </h6>
             <button id="get-location">GET LOCATION</button>
         </div>
     </div>
     <!------------------------------------------------------------ FORM EXIT  --------------------------------------------->
-    <div class="formExit">
+    <div class="serviceForm">
+        <h3>SERVICE</h3>
         <div class="Service">
-            <h3>SERVICE</h3>
-            <h6 class="SERVICEh6"><input id="SERVICEid" type="checkbox"></h6>
+            <h6 class="CYBERSECh6">
+                <input id="CYBERSECid" type="checkbox">
+                <label>CYBER SECURTIY</label>
+            </h6>
+            <h6 class="ARMEDGUARDSh6">
+                <input id="ARMEDGUARDSid" type="checkbox">
+                <label>ARMED GUARDS</label>
+            </h6>
+            <h6 class="UNARMEDGUARDSh6">
+                <input id="UNARMEDGUARDSid" type="checkbox">
+                <label>UNARMED GUARDS</label>
+            </h6>
+            <h6 class="EVENTSECURITYh6">
+                <input id="EVENTSECURITYid" type="checkbox">
+                <label>EVENT SECURITY</label>
+            </h6>
+            <h6 class="VIPPROTECTIONh6">
+                <input id="VIPPROTECTIONid" type="checkbox">
+                <label>VIP PROTECTION</label>
+            </h6>
+            <h6 class="DETECTIVEh6">
+                <input id="DETECTIVEid" type="checkbox">
+                <label>DETECTIVE SERVICE</label>
+            </h6>
+            <h6 class="CONSULTATIONh6">
+                <input id="CONSULTATIONid" type="checkbox">
+                <label>CONSULTATION SERVICE</label>
+            </h6>
+            <h6 class="CONVOYh6">
+                <input id="CONVOYid" type="checkbox">
+                <label>VEHICAL CONVOY SERVICE</label>
+            </h6>
+            <h6 class="ASSAULTTEAMh6">
+                <input id="ASSAULTTEAMid" type="checkbox">
+                <label>SPECIAL ASSAULT TEAM</label>
+            </h6>
+            <h6 class="EXTRACTIONh6">
+                <input id="EXTRACTIONid" type="checkbox">
+                <label>EXTRACTION SERVICE</label>
+            </h6>
+            <h6 class="K9UNITh6">
+                <input id="K9UNITid" type="checkbox">
+                <label>K9 UNIT </label>
+            </h6>
         </div>
+    </div>
 
+    <!--------------------------------------------------------- SERVICE TENURE -------------------------------------------------->
+    <div class="tenure">
+        <h3>SERVICE TENURE</h3>
+        <div class="range">
+            <div class="sliderValue">
+                <span>100</span>
+            </div>
+            <div class="field">
+                <div class="valueleft">0</div>
+                <input type="range" min="0" max="200" value="100" steps="1">
+                <div class="valueright">200</div>
+            </div>
+        </div>
     </div>
     <!------------------------------------------------------------ FOOTER ------------------------------------------------------->
     <footer class="footer">

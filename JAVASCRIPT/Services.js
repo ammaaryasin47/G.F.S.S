@@ -177,3 +177,34 @@ document.getElementById('ADDRESSid').addEventListener('keydown', () => {
 });
 
 document.getElementById('get-location').addEventListener('click', getLocation);
+
+//<-------------------------------------------------------- SERVICE TENURE ------------------------------------------------------------------->
+
+// const sliderValue = document.querySelector("span");
+// const inputSlider = document.querySelector("input");
+// inputSlider.oninput = (()=> {
+//   let value = inputSlider.value;
+//   sliderValue.textContent = value;
+//   sliderValue.style.left = (value/2) + "%";
+//   sliderValue.classList.add("show");
+// });
+// inputSlider.onblur = (()=>{
+//   sliderValue.classList.remove("show");
+// });
+
+document.querySelectorAll('.range').forEach(range => {
+  const sliderValue = range.querySelector('.sliderValue span');
+  const inputSlider = range.querySelector('.field input');
+
+  inputSlider.oninput = () => {
+    let value = inputSlider.value;
+    sliderValue.textContent = value;
+    let percentage = (value / inputSlider.max) * 100;
+    sliderValue.style.left = `calc(${percentage}% - 22.5px)`; // Adjust position
+    sliderValue.classList.add("show");
+  };
+
+  inputSlider.onblur = () => {
+    sliderValue.classList.remove("show");
+  };
+});
