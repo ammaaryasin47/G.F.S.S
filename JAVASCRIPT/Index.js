@@ -2,115 +2,115 @@ document.getElementById('quote-para-name1').addEventListener('change', autocopy)
 
 function autocopy() {
 
-  var startname = document.getElementById('quote-para-name1');
-  var endname = document.getElementById('quote-para-name2');
+    var startname = document.getElementById('quote-para-name1');
+    var endname = document.getElementById('quote-para-name2');
 
-  endname.value = startname.value;
+    endname.value = startname.value;
 };
 
 function digitalClock() {
-  var date, time;
-  date = new Date()
-  time = date.toLocaleTimeString()
-  document.getElementById("clock").innerHTML = time;
+    var date, time;
+    date = new Date()
+    time = date.toLocaleTimeString()
+    document.getElementById("clock").innerHTML = time;
 }
 setInterval(function () {
-  digitalClock()
+    digitalClock()
 }, 1000);
 
 document.addEventListener("DOMContentLoaded", function () {
-  var namePlates = document.querySelectorAll(".NamePlate h1");
+    var namePlates = document.querySelectorAll(".NamePlate h1");
 
-  namePlates.forEach(function (namePlate) {
-    namePlate.style.left = "3rem"; // Slide in from the left
-  });
+    namePlates.forEach(function (namePlate) {
+        namePlate.style.left = "3rem"; // Slide in from the left
+    });
 });
 
 //<---------------------------------------------------- FORM ---------------------------------------------------------------->
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  emailjs.init("mPtxfekfXl_jZzpZy"); // Replace with your EmailJS public key
+    emailjs.init("mPtxfekfXl_jZzpZy"); // Replace with your EmailJS public key
 
-  function sendEmail(event) {
-      event.preventDefault();
-      const name = document.getElementById('quote-para-name1').value;
-      const address = document.querySelector('input[placeholder="ADDRESS"]').value;
-      const service = document.querySelector('.quote-para-drop').value;
-      const contactNo = document.querySelector('input[placeholder="CONTACT NO."]').value;
-      const userEmail = document.querySelector('input[placeholder="EMAIL"]').value;
+    function sendEmail(event) {
+        event.preventDefault();
+        const name = document.getElementById('quote-para-name1').value;
+        const address = document.querySelector('input[placeholder="ADDRESS"]').value;
+        const service = document.querySelector('.quote-para-drop').value;
+        const contactNo = document.querySelector('input[placeholder="CONTACT NO."]').value;
+        const userEmail = document.querySelector('input[placeholder="EMAIL"]').value;
 
-      // Validate email format
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(userEmail)) {
-          alert('Please enter a valid email address.');
-          return;
-      }
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(userEmail)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
 
-      // Define the service description
-      let serviceDescription;
-      switch (service) {
-          case 'CyberSecurity':
-              serviceDescription = 'Our Cyber Security services provide comprehensive protection against online threats, ensuring your digital assets are secure.';
-              break;
-          case 'ArmedGuard':
-              serviceDescription = 'Our Armed Guards are highly trained professionals equipped to handle various security scenarios, providing you with maximum protection.';
-              break;
-          case 'UnarmedGuard':
-              serviceDescription = 'Our Unarmed Guards offer a visible security presence, maintaining safety and order in various environments.';
-              break;
-          case 'EventSecurity':
-              serviceDescription = 'Our Event Security services ensure the safety and smooth operation of your events, with customized plans to meet your needs.';
-              break;
-          case 'Survelliance':
-              serviceDescription = 'Our Surveillance and Monitoring services utilize advanced technology to keep a watchful eye on your premises, 24/7.';
-              break;
-          case 'ExecutiveProtection':
-              serviceDescription = 'Our Executive Protection services provide high-profile individuals with personal security, ensuring their safety at all times.';
-              break;
-          case 'Detective':
-              serviceDescription = 'Our Detective Services offer professional investigative solutions, helping you uncover the truth with discretion and efficiency.';
-              break;
-          case 'Consultation Services':
-              serviceDescription = 'Our Consultation Services provide expert advice and strategic planning to enhance your security measures.';
-              break;
-          case 'Vehical Convoy':
-              serviceDescription = 'Our Vehicle Convoy Service ensures safe and secure transportation for high-value assets and individuals.';
-              break;
-          case 'AssaultTeam':
-              serviceDescription = 'Our Special Assault Team is ready to respond to high-risk situations, providing rapid and effective intervention.';
-              break;
-          case 'Extraction':
-              serviceDescription = 'Our Extraction services are designed to safely remove individuals from dangerous or hostile environments.';
-              break;
-          case 'K9Unit':
-              serviceDescription = 'Our K9 Unit employs trained dogs for various security tasks, including detection and patrol.';
-              break;
-          default:
-              serviceDescription = 'We offer a range of specialized security services tailored to your needs.';
-      }
+        // Define the service description
+        let serviceDescription;
+        switch (service) {
+            case 'CyberSecurity':
+                serviceDescription = 'In Todays Interconnected World, The Threat Landscape Is Constantly Evolving, Making Robust Protection Imperative.Our Tailored Cybersecurity Services Offer A Fortress - Like Defense Against Malicious Actors, Ensuring Your Sensitive Data Remains Secure And Your Operations Uninterrupted.With Our Team Of Seasoned Experts, We Conduct Comprehensive Risk Assessments, Deploy Advanced Threat Detection Technologies, And Implement Proactive Measures To Fortify Your Digital Infrastructure.Rest Assured, With Guardian Fortitude Security Services By Your Side, Your Organization Can Navigate The Digital Realm With Confidence, Knowing That Your Cybersecurity Needs Are In Capable Hands.';
+                break;
+            case 'ArmedGuard':
+                serviceDescription = 'Experience Unmatched Protection With Armed Guards From Guardian Fortitude Security Services. Our Armed Guards Are Meticulously Trained, Rigorously Vetted, And Highly Skilled To Provide Unparalleled Security Solutions. At Guardian Fortitude, We Prioritize Your Safety Above All Else, Offering Round-The-Clock Protection And Peace Of Mind. With A Strong Presence And Unwavering Dedication, Our Armed Guards Ensure The Utmost Safety And Fortitude For Your Premises. Trust In Guardian Fortitude Security Services For Robust Security Solutions That Exceed Expectations.';
+                break;
+            case 'UnarmedGuard':
+                serviceDescription = 'Unarmed Guards Offer Enhanced Security Solutions For Your Premises. Guard Against Potential Threats With Our Professional Services. Trust Guardian Fortitude Security Services To Safeguard Your Assets And Ensure Peace Of Mind. Rest Assured With Our Trained And Diligent Personnel. Experience Top-Notch Protection Without Compromising Safety. Secure Your Property With Confidence Today!';
+                break;
+            case 'EventSecurity':
+                serviceDescription = 'Guardian Fortitude Security Services Presents Event Security As An Unparalleled Safeguarding Solution, Meticulously Crafted To Ensure The Utmost Safety And Tranquility For Your Gatherings. Our Seasoned Professionals, Equipped With Cutting-Edge Technology And Profound Expertise, Stand As Stalwart Sentinels, Fortifying Every Facet Of Your Event With Unwavering Vigilance. From Crowd Control To Risk Mitigation, We Orchestrate A Seamless Security Framework, Tailored To Your Unique Requirements, Fostering An Environment Of Confidence And Reassurance. Entrust Your Event To Guardian Fortitude, Where Safeguarding Your Occasion Is Not Just A Duty, But A Commitment To Excellence.';
+                break;
+            case 'Survelliance':
+                serviceDescription = 'Surveillance & Monitoring Is Not Merely A Service; Its A Comprehensive Shield Of Security Ensuring Vigilance And Safety. At Guardian Fortitude Security Services, We Offer State-Of-The-Art Surveillance & Monitoring Solutions Tailored To Your Needs. Our Vigilant Team Employs Advanced Technology To Meticulously Watch Over Your Premises, Safeguarding Against Potential Threats And Providing You With Peace Of Mind. With Our Round-The-Clock Monitoring, We Maintain A Watchful Eye, Ready To Respond Swiftly To Any Unusual Activity. Trust Guardian Fortitude Security Services To Be Your Steadfast Guardian, Ensuring The Safety And Security Of Your Assets And Loved Ones.';
+                break;
+            case 'ExecutiveProtection':
+                serviceDescription = 'Our Executive Protection program stands as the pinnacle of safeguarding excellence, ensuring the utmost security for you and your assets. With a team of seasoned professionals trained in the art of protection, we guarantee unparalleled fortitude in shielding you from any potential threat. Our comprehensive approach encompasses meticulous planning, advanced risk assessment, and discreet yet vigilant surveillance to anticipate and neutralize any potential risks. Rest assured, with Guardian Fortitude Security Services by your side, your safety is our paramount priority.';
+                break;
+            case 'Detective':
+                serviceDescription = 'Guardian Fortitude Security Services proudly presents Detective Services, an unparalleled solution for your investigative needs. Our adept team of professionals ensures meticulous attention to detail in every case, providing comprehensive insights and actionable intelligence. With a commitment to confidentiality and integrity, we uncover truths, resolve uncertainties, and safeguard your interests with unwavering dedication. Elevate your security posture and gain peace of mind with Guardian Fortitudes Detective Services—where reliability meets excellence.';
+                break;
+            case 'Consultation Services':
+                serviceDescription = 'Guardian Fortitude Security Services presents Consultation Services, an Exclusive Offering designed to fortify your security infrastructure. Our team of Experts delivers Tailored Solutions, ensuring your unique needs are met with Precision and Care. With Comprehensive Assessments, we identify vulnerabilities and provide Strategic Recommendations to safeguard your assets. Trust in our Proven Expertise to guide you towards Enhanced Security Measures and Peace of Mind. Elevate your protection with Guardian Fortitudes Consultation Services today.';
+                break;
+            case 'Vehical Convoy':
+                serviceDescription = 'Our meticulously trained personnel, equipped with state-of-the-art technology, guarantee a seamless and fortified convoy experience. With a focus on precision, vigilance, and reliability, our convoy services uphold the highest standards of security, safeguarding your assets during transit. Trust Guardian Fortitude Security Services to deliver unmatched fortitude and assurance for your convoy needs.';
+                break;
+            case 'AssaultTeam':
+                serviceDescription = 'Guardian Fortitude Security Services is proud to introduce Assault Team, an unparalleled security service dedicated to safeguarding your assets. With Assault Team, rest assured that your safety is our priority. Our highly trained professionals are equipped with state-of-the-art technology and tactical expertise, ensuring swift and effective response to any threat. Gain peace of mind knowing that Guardian Fortitude is on the frontline, defending your fortitude. Elevate your security standards with Assault Team today.';
+                break;
+            case 'Extraction':
+                serviceDescription = 'Guardian Fortitude Security Services proudly presents Extraction, a comprehensive security solution tailored to safeguard your assets and peace of mind. Our cutting-edge technology coupled with highly trained personnel ensures unparalleled protection for your premises. With Extraction, rest assured that your security needs are not just met, but exceeded. From risk assessment to implementation, we prioritize your safety above all else. Trust Guardian Fortitude Security Services to deliver excellence in every aspect of security provision. Elevate your protection standards with Extraction today.';
+                break;
+            case 'K9Unit':
+                serviceDescription = 'Guardian Fortitude Security Services introduces the elite K9 Unit, an unparalleled asset in safeguarding your premises. With unmatched vigilance and unwavering loyalty, our meticulously trained canine companions stand as stalwart protectors, fortifying your security infrastructure. Trust in the heightened sensory acuity and swift response capabilities of our K9 Unit, ensuring an impenetrable shield against potential threats. Enhanced deterrence and rapid detection are assured with our expertly crafted canine security solutions. Elevate your security paradigm with Guardian Fortitudes esteemed K9 Unit, where safety meets unparalleled excellence.';
+                break;
+            default:
+                serviceDescription = 'We offer a range of specialized security services tailored to your needs.';
+        }
 
-      const templateParams = {
-          to_name: name,
-          from_name: 'Management',
-          service: service,
-          service_paragraph: serviceDescription,
-          user_email: userEmail
-      };
+        const templateParams = {
+            to_name: name,
+            from_name: 'Management',
+            service: service,
+            service_paragraph: serviceDescription,
+            user_email: userEmail
+        };
 
-      emailjs.send('service_s65l3by', 'template_vmhcyvr', templateParams)
-          .then(function (response) {
-              console.log('SUCCESS!', response.status, response.text);
-              alert('Email sent successfully!');
-          }, function (error) {
-              console.log('FAILED...', error);
-              alert('Failed to send email. Please try again.');
-          });
-  }
+        emailjs.send('service_s65l3by', 'template_vmhcyvr', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully!');
+            }, function (error) {
+                console.log('FAILED...', error);
+                alert('Failed to send email. Please try again.');
+            });
+    }
 
-  const sendButton = document.querySelector('.quote-send');
-  sendButton.addEventListener('click', sendEmail);
+    const sendButton = document.querySelector('.quote-send');
+    sendButton.addEventListener('click', sendEmail);
 });
 
 function autocopy() {
-  document.getElementById('quote-para-name2').value = document.getElementById('quote-para-name1').value;
+    document.getElementById('quote-para-name2').value = document.getElementById('quote-para-name1').value;
 }
