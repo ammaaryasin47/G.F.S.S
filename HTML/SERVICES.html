@@ -236,67 +236,84 @@
         <h3>SERVICE</h3>
         <div class="Service">
             <h6 class="CYBERSECh6">
-                <input id="CYBERSECid" type="checkbox">
-                <label>CYBER SECURTIY</label>
+                <input id="CYBERSECid" type="checkbox" onclick="toggleOptions('CYBERSECid')">
+                <label for="CYBERSECid">CYBER SECURITY</label>
             </h6>
             <h6 class="ARMEDGUARDSh6">
-                <input id="ARMEDGUARDSid" type="checkbox">
-                <label>ARMED GUARDS</label>
+                <input id="ARMEDGUARDSid" type="checkbox" onclick="toggleOptions('ARMEDGUARDSid')">
+                <label for="ARMEDGUARDSid">ARMED GUARDS</label>
             </h6>
             <h6 class="UNARMEDGUARDSh6">
-                <input id="UNARMEDGUARDSid" type="checkbox">
-                <label>UNARMED GUARDS</label>
+                <input id="UNARMEDGUARDSid" type="checkbox" onclick="toggleOptions('UNARMEDGUARDSid')">
+                <label for="UNARMEDGUARDSid">UNARMED GUARDS</label>
             </h6>
             <h6 class="EVENTSECURITYh6">
-                <input id="EVENTSECURITYid" type="checkbox">
-                <label>EVENT SECURITY</label>
+                <input id="EVENTSECURITYid" type="checkbox" onclick="toggleOptions('EVENTSECURITYid')">
+                <label for="EVENTSECURITYid">EVENT SECURITY</label>
             </h6>
             <h6 class="VIPPROTECTIONh6">
-                <input id="VIPPROTECTIONid" type="checkbox">
-                <label>VIP PROTECTION</label>
+                <input id="VIPPROTECTIONid" type="checkbox" onclick="toggleOptions('VIPPROTECTIONid')">
+                <label for="VIPPROTECTIONid">VIP PROTECTION</label>
             </h6>
             <h6 class="DETECTIVEh6">
-                <input id="DETECTIVEid" type="checkbox">
-                <label>DETECTIVE SERVICE</label>
+                <input id="DETECTIVEid" type="checkbox" onclick="toggleOptions('DETECTIVEid')">
+                <label for="DETECTIVEid">DETECTIVE SERVICE</label>
             </h6>
             <h6 class="CONSULTATIONh6">
-                <input id="CONSULTATIONid" type="checkbox">
-                <label>CONSULTATION SERVICE</label>
+                <input id="CONSULTATIONid" type="checkbox" onclick="toggleOptions('CONSULTATIONid')">
+                <label for="CONSULTATIONid">CONSULTATION SERVICE</label>
             </h6>
             <h6 class="CONVOYh6">
-                <input id="CONVOYid" type="checkbox">
-                <label>VEHICAL CONVOY SERVICE</label>
+                <input id="CONVOYid" type="checkbox" onclick="toggleOptions('CONVOYid')">
+                <label for="CONVOYid">VEHICAL CONVOY SERVICE</label>
             </h6>
             <h6 class="ASSAULTTEAMh6">
-                <input id="ASSAULTTEAMid" type="checkbox">
-                <label>SPECIAL ASSAULT TEAM</label>
+                <input id="ASSAULTTEAMid" type="checkbox" onclick="toggleOptions('ASSAULTTEAMid')">
+                <label for="ASSAULTTEAMid">SPECIAL ASSAULT TEAM</label>
             </h6>
             <h6 class="EXTRACTIONh6">
-                <input id="EXTRACTIONid" type="checkbox">
-                <label>EXTRACTION SERVICE</label>
+                <input id="EXTRACTIONid" type="checkbox" onclick="toggleOptions('EXTRACTIONid')">
+                <label for="EXTRACTIONid">EXTRACTION SERVICE</label>
             </h6>
             <h6 class="K9UNITh6">
-                <input id="K9UNITid" type="checkbox">
-                <label>K9 UNIT </label>
+                <input id="K9UNITid" type="checkbox" onclick="toggleOptions('K9UNITid')">
+                <label for="K9UNITid">K9 UNIT</label>
             </h6>
+        </div>
+        <div id="dynamicOptions">
+            <h2>Preferences</h2>
+        </div>
+    </div>
+    <!--------------------------------------------------------- SERVICE TENURE -------------------------------------------------->
+    <div class="tenure">
+        <div class="tenure-container">
+            <h2> SERVICE TENURE </h2>
+            <div class="picker">
+                <label for="start-date-time">OPERATION BEGIN :</label>
+                <input type="datetime-local" id="start-date-time">
+                <label for="end-date-time">OPERATION TERMINATE :</label>
+                <input type="datetime-local" id="end-date-time">
+                <button id="confirm-button">CONFIRM</button>
+            </div>
+            <div id="output">
+                <p id="output-start-date"></p>
+                <p id="output-start-time"></p>
+                <p id="output-end-date"></p>
+                <p id="output-end-time"></p>
+            </div>
         </div>
     </div>
 
-    <!--------------------------------------------------------- SERVICE TENURE -------------------------------------------------->
-    <div class="tenure">
-        <h3>SERVICE TENURE</h3>
-        <div class="range">
-            <div class="sliderValue">
-                <span>100</span>
-            </div>
-            <div class="field">
-                <div class="valueleft">0</div>
-                <input type="range" min="0" max="200" value="100" steps="1">
-                <div class="valueright">200</div>
-            </div>
+    <!------------------------------------------------------------ SUMMARY  ------------------------------------------------------------------>
+
+    <div class="summary">
+        <h2>SUMMARY</h2>
+        <div class="summaryp">
+            <p id="summary-text"></p>
         </div>
+        <a href="#">PAYMENT</a>
     </div>
-    <!------------------------------------------------------------ FOOTER ------------------------------------------------------->
+    <!------------------------------------------------------------ FOOTER -------------------------------------------------------------------->
     <footer class="footer">
         <div class="footer-row">
 
