@@ -1,0 +1,410 @@
+ <div class="productcontainer">
+    <div class="row">
+      <aside class="col-md-3">
+        <div class="card bg-dark">
+          <article class="filter-group">
+            <header class="card-header">
+              <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+                <i class="icon-control fa fa-chevron-down"></i>
+                <h6 class="title">Product type</h6>
+              </a>
+            </header>
+            <div class="filter-content collapse show" id="collapse_1" style="">
+              <div class="card-body">
+                <form class="pb-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                      <button class="btn btn-light" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+                <ul class="list-menu">
+                  <li><a href="#">Body Armor </a></li>
+                  <li><a href="#">Non-Lethal Products </a></li>
+                  <li><a href="#">Lethal Products</a></li>
+                  <li><a href="#">Accessories </a></li>
+                  <li><a href="#">Pet Care Products</a></li>
+                  <li><a href="#">Site Security Appliances</a></li>
+                  <li><a href="#">Guides & Books</a></li>
+                  <li><a href="#">Merch </a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="filter-group">
+            <header class="card-header">
+              <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
+                <i class="icon-control fa fa-chevron-down"></i>
+                <h6 class="title">Brands </h6>
+              </a>
+            </header>
+            <div class="filter-content collapse show" id="collapse_2" style="">
+              <div class="card-body">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" checked="" class="custom-control-input">
+                  <div class="custom-control-label">G.F.S.S
+                    <b class="badge badge-pill badge-light float-right">120</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" checked="" class="custom-control-input">
+                  <div class="custom-control-label">Qore
+                    <b class="badge badge-pill badge-light float-right">15</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" checked="" class="custom-control-input">
+                  <div class="custom-control-label">Mitsubishi
+                    <b class="badge badge-pill badge-light float-right">35</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" checked="" class="custom-control-input">
+                  <div class="custom-control-label">Nissan
+                    <b class="badge badge-pill badge-light float-right">89</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <div class="custom-control-label">Honda
+                    <b class="badge badge-pill badge-light float-right">30</b>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </article>
+        </div>
+      </aside>
+      <main class="col-md-9">
+        <div class="row page-item" id="page-1">
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <span class="badge badge-danger"> NEW </span>
+                <img src="https://www.qoreperformance.com/cdn/shop/products/XFT_black_frontbag_720x.jpg?v=1653507605"
+                  class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">CHEST RIG</a>
+                  <h6>QORE</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                    <del class="price-old">$1980</del>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/736x/6d/f3/d5/6df3d5b7a9960876eae9b1452d3d8aef.jpg" class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height ">
+                  <a href="#" class="title">BALLISTIC PLATE</a>
+                  <h6>StrikeFace</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img
+                  src="https://www.qoreperformance.com/cdn/shop/files/DFNDRLevelIII_CHeroA_1800x1800.jpg?v=1712152554"
+                  class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">BALLISTIC PLATES </a>
+                  <h6>QORE</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img
+                  src="https://www.qoreperformance.com/cdn/shop/files/SLKG3VestOnly_86e4b39b-3640-4590-9c4e-ffcc71266138_1800x1800.jpg?v=1716504000"
+                  class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">SAFETY VEST</a>
+                  <h6>QORE</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/564x/e7/4e/1a/e74e1a1ae49f2c111be163165335aa88.jpg" class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">BALLISTIC SHIELD</a>
+                  <h6>G.F.S.S</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/564x/7c/a4/25/7ca42559b6a2f5fea4cb5de49866b71e.jpg" class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">BALLISTIC HELMET</a>
+                  <h6>G.F.S.S</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/564x/47/0b/fc/470bfc6f713672c0ae3823d62249e942.jpg"
+                  class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">TACTICAL POUCH</a>
+                  <h6>Qore</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/564x/ac/21/6a/ac216a8f110ef831d29f0a59f604ee84.jpg" class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">Riot Shield</a>
+                  <h6>G.F.S.S</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$1280</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img src="https://i.pinimg.com/564x/f8/ca/97/f8ca9745cb9f87ff9dde8a2ba7a48868.jpg"
+                  class="img-fluid">
+                <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+              </div>
+              <figcaption class="info-wrap bg-dark">
+                <div class="fix-height">
+                  <a href="#" class="title">TACTICAL BAGPACK</a>
+                  <h6>G.F.S.S</h6>
+                  <div class="price-wrap mt-2">
+                    <span class="price">$150</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <nav class="mt-4 pagination-container" aria-label="Page navigation sample">
+          <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    const paginationLinks = document.querySelectorAll('.page-link');
+    const pages = document.querySelectorAll('.page-item');
+
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', filterProducts);
+    });
+
+    paginationLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const page = this.getAttribute('data-page');
+        switchPage(page);
+      });
+    });
+
+    function filterProducts() {
+      const selectedFilters = Array.from(checkboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.getAttribute('data-filter'));
+
+      const products = document.querySelectorAll('.product-item');
+
+      products.forEach(product => {
+        const productClasses = Array.from(product.classList);
+        const matches = selectedFilters.every(filter => productClasses.includes(filter));
+        product.style.display = matches ? '' : 'none';
+      });
+    }
+
+    function switchPage(page) {
+        let currentPage = Array.from(pages).find(page => page.style.display !== 'none');
+        if (!currentPage) {
+          currentPage = pages[0];
+        }
+      
+        let currentPageIndex = Array.from(pages).indexOf(currentPage);
+        let newPageIndex;
+      
+        if (page === 'prev') {
+          newPageIndex = currentPageIndex > 0 ? currentPageIndex - 1 : 0;
+        } else if (page === 'next') {
+          newPageIndex = currentPageIndex < pages.length - 1 ? currentPageIndex + 1 : pages.length - 1;
+        } else {
+          newPageIndex = parseInt(page) - 1;
+        }
+      
+        currentPage.style.display = 'none';
+      
+        if (pages[newPageIndex]) {
+          pages[newPageIndex].style.display = 'flex';
+          updatePaginationLinks(newPageIndex);
+        } else {
+          console.error(`Page index ${newPageIndex} not found.`);
+        }
+      }
+      
+
+    function updatePaginationLinks(activePageIndex) {
+        paginationLinks.forEach(link => link.parentElement.classList.remove('active'));
+        paginationLinks[activePageIndex + 1].parentElement.classList.add('active');
+
+        paginationLinks[0].parentElement.classList.toggle('disabled', activePageIndex === 0);
+        paginationLinks[paginationLinks.length - 1].parentElement.classList.toggle('disabled', activePageIndex === pages.length - 1);
+      }
+  });
+
+
+.productcontainer{
+  margin-top: 5rem;
+}
+
+.icon-control {
+  margin-top: 5px;
+  float: right;
+  font-size: 80%;
+}
+
+.btn-light {
+  background-color: #fff;
+  border-color: #e4e4e4;
+}
+
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.list-menu a {
+  color: #fff;
+}
+.card-product-grid{
+  border: 1px solid black;
+}
+.card-product-grid .info-wrap {
+  overflow: hidden;
+  padding: 18px 20px;
+}
+
+[class*='card-product'] a.title {
+  color: #fff;
+  display: block;
+}
+
+.card-product-grid:hover .btn-overlay {
+  opacity: 1;
+}
+.card-product-grid .btn-overlay {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-control-label, .price-wrap, .fix-height{
+  color: #fff;
+  font-family: 'Abel',sans-serif;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+#page-2 {
+  display: flex; /* Ensures products align in a row */
+  flex-wrap: wrap; /* Allows products to wrap to the next line if needed */
+  margin-top: 2rem; /* Adjust as needed for spacing */
+}
+
+#page-2 .col-md-4 {
+  margin-bottom: 2rem; /* Adjust spacing between products */
+}

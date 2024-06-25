@@ -597,18 +597,30 @@ input:valid + label {
 
 
 #dynamicOptions {
-  padding-top: 3rem;
+  font-family: 'Abel',sans-serif;
+  width: 70rem;
+  background: #000000;
+  border-radius: 2rem;
+  opacity: 60%;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 100%;
 }
 
 #dynamicOptions h2{
   padding: 2rem;
   font-family: 'Abel',sans-serif;
   font-size: 4rem;
+}
+
+#dynamicOptions p{
+  font-size: 2.5rem;
+}
+
+#dynamicOptions label{
+  font-size: 3rem;
 }
 
 .optionsDiv{
@@ -643,6 +655,16 @@ input:valid + label {
   color: black;
 }
 
+.service-input {
+  background: transparent;
+  outline: none;
+  color: #fff;
+  width: 15rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+}
 /*<----------------------------------------------- SERVICE TENURE ---------------------------------------------------------->*/
 
 .tenure {

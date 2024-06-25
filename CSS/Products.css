@@ -1,0 +1,516 @@
+/*<-------------------------------------------------- FONT IMPORT ----------------------------------------------->*/
+
+/* FONT NAME : POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FONT NAME : ARVO */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
+
+/* FONT NAME : ALEGREYA */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* FONT NAME: QUANTICO */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME: COURIER PRIME */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : Alegreya SC  */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap');
+
+/* FONT NAME : ABEL */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body,html {
+  font-size: 65.7%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  font-family: "Abel", sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
+
+.header {
+  font-family: "Bebas Neue",sans-serif;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem 3.5rem;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, .2);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  position: sticky;
+  left: 5.5rem;
+  color: #fff;
+  width: 7rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 3.5rem;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: rgb(146, 146, 146);
+}
+
+/*<------------------------------------------------------- CAROUSEL ------------------------------------------------------------------> */
+
+.carousel-caption h5 {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* <-----------------------------------------------------SEARCH PAGE ---------------------------------------------------------------> */
+
+.searchcontainer{
+  height: 100%;
+  width: 100%;
+  background: url(https://cdn.wallpapersafari.com/39/90/BCW1Ot.jpg);  
+  background-size: contain;
+}
+
+.search {
+  position: relative;
+  left: 7rem;
+  opacity: 90%;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search_input {
+  color:white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  margin-top: 5px;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.search .search_input {
+  color: black;
+  font-size: 2rem;
+  padding: 0 10px;
+  width: 550px;
+  caret-color: red;
+  transition: width 0.4s linear;
+}
+
+.search:hover>.search_icon {
+  background: grey;
+  color: #fff;
+}
+
+.search_icon {
+  height: 50px;
+  width: 50px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+/*<----------------------------------------------------- PRODUCT CATALOGUE ------------------------------------------------------------->*/
+
+.cardscontainer {
+  background: black;
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+.cardscontainer a{
+  text-decoration: none;
+  outline: none;
+}
+/*---- Card ----*/
+.row{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card {
+  border: none;
+  margin-bottom:2rem ;
+  border-radius: 8px;
+  margin-top: 0px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
+}
+.card:hover {
+  box-shadow: 0px 9px 17px rgba(0, 0, 0, 0.70);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.card .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+  height: 450px;
+}
+.card .card1{
+  background: url(https://images.squarespace-cdn.com/content/v1/5f6f5a30a49b5d4c23bee3fe/ab198a33-1032-4e38-a300-3de3be395787/overhead-front-angled-dark.png?format=1500w);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card2{
+  background: url(https://i.pinimg.com/564x/93/5f/52/935f52fde0180d61a5698b880133a197.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card3{
+  background: url(https://www.aa-store.at/images/cached/625EE5A2489D5/products/27040/65758/800x800/pts-mtek-flux-helmet-tan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card4{
+  background: url(https://i.pinimg.com/564x/09/4f/2f/094f2ff1d0be52d7c4cd0b341f0c8915.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card5{
+  background: url(https://i.pinimg.com/564x/73/2b/78/732b78bdda48879fc118633568f4b0e5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card6{
+  background: url(https://i.pinimg.com/736x/20/80/dd/2080ddd565c3228750a349741760cf7c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card7{
+  background: url(https://i.pinimg.com/564x/26/07/35/260735e3296d490859538d4fbd56262d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .card8{
+  background: url(https://i.pinimg.com/564x/ac/54/e9/ac54e9f9e65b83b8dbdf17c0afd46f68.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*---- Date Box ----*/
+.card .container-date {
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  color: #FFFFFF !important;
+  font-weight: 900;
+}
+.card .date-box {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  padding: 16px 0px;
+  background: none;
+  text-align: center; 
+  width: 58px;
+  float: right;
+  margin: 0px 12px 0px 0px;
+  background: rgba(0, 0 ,0 , 0.7);
+}
+.card:hover .date-box {  
+  background: #FFFF00;
+  color: #000000;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.container-date .date-box span {
+  font-size: 26px;
+  line-height: 29px;
+}
+.container-date .date-box p {
+  line-height: 14px;
+  margin: auto 0px;
+  text-transform: uppercase;
+}
+/*---- Text Container ----*/
+.card .image-box .text-container {
+  font-family: 'Abel',sans-serif;
+  padding: 18px 20px;
+  margin-top: 324px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.card .image-box:hover .text-container {
+  padding: 16px 20px;
+  margin-top: 204px;
+  background: rgba(0, 0 ,0 , 0.7);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card .image-box .text-container p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin: 12px 0px 5px 0px;
+  padding: 0px;
+}
+.subtitle {
+  font-size: 38px;
+  text-align: left;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 46px;
+  font-family: 'Abel', sans-serif;
+  margin-top: 0px;
+}
+.subtitle i {
+  color: grey;
+  visibility: hidden;
+  margin-left: 8px;
+}
+.card:hover .subtitle i {
+  visibility: visible;
+}
+/*---- Button ----*/  
+.button-down {
+  background: grey;
+  padding: 12px 0px;
+  text-align: center;
+  font-size: 15px;
+  color: #000000 !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.button-down:hover{
+  font-size: 17px;
+}
+
+.button-down a{
+  color: black;
+}
+/*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
+
+footer {
+  font-family: 'Abel',sans-serif;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top:387.5rem;
+  background: linear-gradient(to right, #111111, #2d0b00);
+  color: #fff;
+  padding: 10rem 0 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-family: 'Poppins', sans-serif;
+  flex-basis: 25%;
+  padding: 1rem;
+}
+
+.footer-col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col ul:hover {
+  color: rgb(40, 157, 235);
+}
+
+#footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-col h3 {
+  width: max-content;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.footer-email-id {
+  width: fit-content;
+  margin: 2rem 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form {
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5rem;
+}
+
+.footer-form .bx {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .bx {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.social-icons .bx {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #000;
+  background: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 0.1rem;
+  background: #767676;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.footer-underline span {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}

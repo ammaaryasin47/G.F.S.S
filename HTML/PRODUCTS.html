@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G.F.S.S Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <!--FONT AWESOME CDN-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- BOXICONS CDN -->
+  <link href="../CSS/Products.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
+  <!----------------------------------------------------------- NAVBAR ------------------------------------------------------->
+  <nav>
+    <header class="header">
+      <a hef="#" class="logo"><img src="../IMAGES/Logo.png" height="50px"></a> <!-- LOGO -->
+
+      <nav class="navbar">
+        <a href="../HTML/G.F.S.S.html">HOME</a>
+        <a href="../HTML/SERVICES.html">SERVICES</a>
+        <a href="../HTML/PRODUCTS.html">PRODUCTS</a>
+        <a href="../HTML/ABOUT.html">ABOUT US</a>
+        <a href="#">CONTACT US</a>
+        <a href="../HTML/LOGIN.html">LOGIN</a>
+      </nav>
+    </header>
+  </nav>
+
+  <!------------------------------------------------------------- CAROUSEL ------------------------------------------------------------------->
+  <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../IMAGES/Products/Carousel/Caruosel-01.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>GUARDIAN FORTITUDE</h5>
+          <p>Securing The Present , Safeguarding The Future</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../IMAGES/Products/Carousel/Carousel-02.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>M-9 Reaper Drones</h5>
+          <p>Checkout Our Latest Batch Of Most Advanced Drones</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../IMAGES/Products/Carousel/Carousel-03.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Colt 1911</h5>
+          <p>Checkout Our Newly Arrived 1911!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!------------------------------------------------------- SEARCH PAGE ----------------------------------------------------------------->
+
+  <div class="searchcontainer">
+    <div class="d-flex justify-content-center h-100">
+      <div class="search">
+        <input class="search_input" type="text" name="">
+        <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------------------------------------- PRODUCT CARDS ---------------------------------------------------------->
+  <div class="cardscontainer">
+    <h1 class="display-2 text-center my-4 text-light ">PRODUCTS</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="https://www.google.com/">
+          <div class="card">
+            <div class="image-box card1">
+              <div class="text-container">
+                <span class="subtitle">SPECIALIZED VEHICALS<i class="fa fa-angle-double-down"></i></span>
+                <p>Unleash Unparalleled Protection And Power With Our State-Of-The-Art B6 Level Armored Vehicals .</p>
+              </div>
+              <div class="button-down">
+                <span>Know More</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card3">
+              <div class="text-container">
+                <span class="subtitle">ARMOR<i class="fa fa-angle-double-down"></i></span>
+                <p>Stay Protected With Our Top-Of-The-Line Armored Vests And Helmets, Superior Comfort For Ultimate Luxury .</p>
+              </div>
+              <div class="button-down">
+                <a href="../HTML/SERVICES.html">Know More</a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card5">
+              <div class="text-container">
+                <span class="subtitle">MELEE<i class="fa fa-angle-double-down"></i></span>
+                <p>Unleash Your Inner Warrior With Our Premium Melee Weapons, Experience Unmatched Durability In Every Strike!.</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card4">
+              <div class="text-container">
+                <span class="subtitle">ARMOURY<i class="fa fa-angle-double-down"></i></span>
+                <p>Discover Top-Tier Precision With Our Premium Selection Of Firearms At Armoury.</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="clearfix visible-xs"></div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card2">
+              <div class="text-container">
+                <span class="subtitle">OPTICS<i class="fa fa-angle-double-down"></i></span>
+                <p>Dominate The Field With Our State-Of-The-Art Military Optics, Engineered For Durability In The Toughest Conditions.</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card6">
+              <div class="text-container">
+                <span class="subtitle">GUIDES & BOOKS<i class="fa fa-angle-double-down"></i></span>
+                <p>Let The Pages Be Your Guide To New Worlds, Unlocking The Boundless Realms Of Knowledge.</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card7">
+              <div class="text-container">
+                <span class="subtitle">SITE SECURITY<i class="fa fa-angle-double-down"></i></span>
+                <p>Discover Our Comprehensive Range Of Site Security Accessories Today!</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <a href="">
+          <div class="card">
+            <div class="image-box card8">
+              <div class="text-container">
+                <span class="subtitle">UNMANNED VEHICALS<i class="fa fa-angle-double-down"></i></span>
+                <p>Discover Our Comprehensive Range Of Unmanned Battlefield Vehicals Today!</p>
+              </div>
+              <div class="button-down">
+                <span>Know more</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------- FOOTER ------------------------------------------------------------>
+  <footer class="footer">
+    <div class="footer-row">
+
+      <div class="footer-col"> <!-- Logo And Tagline -->
+        <img src="../IMAGES/Logo.png" id="footer-logo" alt="logo" width="150px" height="150px">
+        <p>Fortifying The Present, Safeguarding The Future ...</p>
+        <p>We Are The Saviours , The Last Hope , The Best .</p>
+        <p>We Are
+        <h3>THE GUARDIAN FORTITUDE</h3>
+        </p>
+      </div>
+
+      <div class="footer-col"> <!--OFFICE ADDRESS & CONTACT -->
+        <h3>OFFICE <div class="footer-underline"><span></span></div>
+        </h3>
+        <p>D-Fuzer HQ Security Wing ,</p>
+        <p>99th Avenue,</p>
+        <p>Ahmedabad , INDIA </p>
+        <p class="footer-email-id">guardianfortitudeservice@gmail.com</p>
+        <h4>+91 1234567890</h4>
+      </div>
+
+      <div class="footer-col"> <!-- Nav Pages -->
+        <h3>Pages<div class="footer-underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"> <!-- Email Form For Latest Upadates -->
+        <h3>To Recieve Our Latest Updates<div class="footer-underline"><span></span></div>
+        </h3>
+        <form class="footer-form">
+          <i class='bx bxs-envelope'></i>
+          <input type="email" placeholder="Enter Your Email ID" required>
+          <button type="submit"><i class='bx bxs-arrow-from-left'></i></i></i></button>
+        </form>
+
+        <div class="social-icons"> <!-- Social Media Icons -->
+          <a class='bx bxl-instagram' href="#"></a>
+          <a class='bx bxl-twitter' href="#"></a>
+          <a class='bx bxl-reddit' href="#"></a>
+          <a class='bx bxl-whatsapp' href="#"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">Guardian Fortitude Security Services &copy; 2024 - All Rights Reserved</p>
+    <p class="copyright">Guardian Fortitude Security Services Is A Registered Trademark Under The D-Fuzer
+      Army&#174;</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

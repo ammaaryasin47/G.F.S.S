@@ -190,69 +190,112 @@ function toggleOptions(serviceId) {
     optionsDiv.setAttribute('id', serviceId + 'Options');
 
     switch (serviceId) {
-      case 'ARMEDGUARDSid': 
+      case 'ARMEDGUARDSid':
         optionsDiv.innerHTML = `
-                  <label for="gender">Preferred Gender of Guards:</label>
-                  <select id="gender" name="gender">
-                      <option value="male" selected>Male</option>
-                      <option value="female">Female</option>
-                      <option value="no_preference">No Preference</option>
+                  <label>Male Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                   <label>Female Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <label>Preffered Guard Weapon</label>
+                  <select>
+                    <option value='Pistol'>Pistol</option>
+                    <option value='SMG'>SMG</option>
+                    <option value='AR Rifle'>AR Rifle</option>
                   </select>
               `;
         break;
 
-        case 'UNARMEDGUARDSid':
+      case 'UNARMEDGUARDSid':
         optionsDiv.innerHTML = `
-                  <label for="unarmedgender">Preferred Gender of Guards:</label>
-                  <select id="unarmedgender" name="unarmedgender">
-                      <option value="male" selected>Male</option>
-                      <option value="female">Female</option>
-                      <option value="no_preference">No Preference</option>
-                  </select>
+                  <label>Male Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                   <label>Female Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <br>
+                  <p>* All Unarmed Guards Will Possess Non-Lethal Tasers & Baton</p>
+              
               `;
         break;
 
       case 'VIPPROTECTIONid':
         optionsDiv.innerHTML = `
-                    <label for="protection">Number Of Guards:</label>
-                    <select id="protection" name="protection">
-                        <option value="one">1</option>
-                        <option value="Two" selected>2</option>
-                        <option value="Squad"> 4 Guards</option>
-                        <option value="Team"> 4 Guards + 2 Snipers</option>
-                        <option value="Team"> 4 Guards + 2 Drones</option>
-                        <option value="no_preference">No Preference</option>
-                    </select>
+                   <label>Male Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                   <label>Female Armed Guards</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <label>Preffered OnSite Personnels:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <label>Preffered Snipers:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <p>*All Guards Will Be Heavily Armed With Lethal Weapons </p>
                 `;
         break;
 
       case 'CONVOYid':
         optionsDiv.innerHTML = `
-                    <label for="vehicle">Preferred Convoy Vehicle:</label>
-                    <select id="vehicle" name="vehicle">
-                        <option value="onesedan">1 Sedan</option>
-                        <option value="onesuv">1 SUV</option>
-                        <option value="twosuv" selected>2 SUV</option>
-                        <option value="onepcv">1 PCV</option>
-                        <option value="twopcv">2 PCV</option>
-                    </select>
+                    <label>Preffered Number Of Sedans:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <p>2 Guards Including Driver</p>
+                  <br>
+
+                  <label>Preffered Number Of SUVs:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <p>3 Guards & A Driver</p>
+                  <br>
+
+                  <label>Preffered Number Of PCV:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <p>14 Guards & A Driver</p>
+                  <br>
+
+                  <p>*All Vehicals Are Level 6 Ballistic Protection Certified</p>
                 `;
         break;
 
       case 'ASSAULTTEAMid':
         optionsDiv.innerHTML = `
-                    <label for="assault">Number Of Operatives:</label>
-                    <select id="assault" name="assault">
-                        <option value="Squad" selected> 4 Ground Operatives</option>
-                        <option value="Squad+Sniper"> 4 Ground Operatives + 2 Snipers</option>
-                        <option value="TwoSquads+Sniper"> 8 Ground Operatives+ 2 Snipers</option>
-                        <option value="ThreeSquads+Sniper"> 12 Ground Operatives+ 4 Snipers</option>
-                        <option value="no_preference">No Preference</option>
+                    <label>Preffered Method:</label>
+                  <div>
+                    <select>
+                      <option value='Stealth'>Stealth</option>
+                       <option value='Direct'>Direct</option>
                     </select>
+                  </div>
+                    <label>Preffered OnSite Personnels:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <label>Preffered Snipers:</label>
+                  <div class="number-input">
+                    <input class="service-input" type="number" value="0">
+                  </div>
+                  <p>*Your Choice Will Be Assumed As Suggestion In The Plan</p>
                 `;
         break;
 
-        case 'EXTRACTIONid':
+      case 'EXTRACTIONid':
         optionsDiv.innerHTML = `
                     <label for="extraction">Preferred Vehical Of Extraction:</label>
                     <select id="extraction" name="extraction">
@@ -302,7 +345,7 @@ document.getElementById('confirm-button').addEventListener('click', function () 
 
 // <-----------------------------------------------------SUMMARY ------------------------------------------------------------------------>
 
-document.getElementById('confirm-button').addEventListener('click', function() {
+document.getElementById('confirm-button').addEventListener('click', function () {
   const name = document.getElementById('NAMEid').value;
   const company = document.getElementById('COMPANYid').value;
   const email = document.getElementById('EMAILid').value;
@@ -319,11 +362,11 @@ document.getElementById('confirm-button').addEventListener('click', function() {
   const endTime = endDateTime.toLocaleTimeString();
 
   const services = [
-      'CYBERSECid', 'ARMEDGUARDSid', 'UNARMEDGUARDSid', 'EVENTSECURITYid', 'VIPPROTECTIONid',
-      'DETECTIVEid', 'CONSULTATIONid', 'CONVOYid', 'ASSAULTTEAMid', 'EXTRACTIONid', 'K9UNITid'
+    'CYBERSECid', 'ARMEDGUARDSid', 'UNARMEDGUARDSid', 'EVENTSECURITYid', 'VIPPROTECTIONid',
+    'DETECTIVEid', 'CONSULTATIONid', 'CONVOYid', 'ASSAULTTEAMid', 'EXTRACTIONid', 'K9UNITid'
   ].filter(id => document.getElementById(id).checked)
-   .map(id => document.querySelector(`label[for="${id}"]`).innerText)
-   .join(', ');
+    .map(id => document.querySelector(`label[for="${id}"]`).innerText)
+    .join(', ');
 
   const summaryText = `
       Mr./Mrs. <span class="bold-underline">${name}</span>, Representing <span class="bold-underline">${company}</span>,
@@ -342,13 +385,13 @@ document.getElementById('confirm-button').addEventListener('click', function() {
 });
 
 // Example function to get location
-document.getElementById('get-location').addEventListener('click', function() {
+document.getElementById('get-location').addEventListener('click', function () {
   if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-          document.getElementById('LATid').value = position.coords.latitude;
-          document.getElementById('LONGid').value = position.coords.longitude;
-      });
+    navigator.geolocation.getCurrentPosition(function (position) {
+      document.getElementById('LATid').value = position.coords.latitude;
+      document.getElementById('LONGid').value = position.coords.longitude;
+    });
   } else {
-      alert("Geolocation is not supported by this browser.");
+    alert("Geolocation is not supported by this browser.");
   }
 });
