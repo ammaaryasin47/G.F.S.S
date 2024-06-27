@@ -334,3 +334,151 @@ a:hover {
   background-color: #444444;
   transform: translateY(-50%);
 }
+
+.bg-golden {
+  background-color: #FFD700 !important;
+}
+
+/*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
+
+footer {
+  font-family: 'Abel',sans-serif;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top:330.5rem;
+  background: linear-gradient(to right, #111111, #ffc107);
+  color: #fff;
+  padding: 10rem 0 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-family: 'Poppins', sans-serif;
+  flex-basis: 25%;
+  padding: 1rem;
+}
+
+.footer-col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col ul:hover {
+  color: rgb(40, 157, 235);
+}
+
+#footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-col h3 {
+  width: max-content;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.footer-email-id {
+  width: fit-content;
+  margin: 2rem 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form {
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5rem;
+}
+
+.footer-form .bx {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .bx {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.social-icons .bx {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #000;
+  background: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 0.1rem;
+  background: #767676;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.footer-underline span {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
