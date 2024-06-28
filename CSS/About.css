@@ -326,6 +326,7 @@ footer {
 }
 
 .footer-col h3 {
+  font-size: 1.6rem;
   width: fit-content;
   margin-bottom: 4rem;
   position: relative;

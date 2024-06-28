@@ -93,26 +93,50 @@ html {
 }
 
 .navbar a:hover {
-  color: goldenrod;
+  color: rgb(131, 29, 29);
 }
 
 /*<------------------------------------------------------- CAROUSEL ------------------------------------------------------------------> */
 
-.carousel-caption h5 {
-  font-family: 'Abel', sans-serif;
-  color: white;
-  font-size: 4rem;
+.text-primary {
+  position: relative;
+  bottom: 63rem;
+  font-size: 5rem;
 }
 
-.carousel-caption p {
-  font-family: 'Abel', sans-serif;
-  font-size: 2rem;
+.topic {
+  position: relative;
+  bottom: 63rem;
+  font-size: 5rem;
+  color: rgb(131, 29, 29);
+}
+
+.text-secondary {
+  position: relative;
+  bottom: 63rem;
+  font-size: 3rem;
+}
+
+.armor-intro {
+  height: 0rem;
+  font-size: 1.9rem;
+  padding: 0rem 3rem;
+  position: relative;
+  bottom: 45rem;
 }
 
 /*<--------------------------------------------------- PRODUCT CARDS  ----------------------------------------------------->*/
 .Product-head{
   font-size: 4rem;
-  border-bottom: 2px solid goldenrod;
+  border-bottom: 2px solid rgb(131, 29, 29);
+  width: fit-content;
+  position: relative;
+  left: 55rem;
+}
+
+.Product-head-2{
+  font-size: 4rem;
+  border-bottom: 2px solid rgb(131, 29, 29);
   width: fit-content;
   position: relative;
   left: 45rem;
@@ -149,7 +173,7 @@ a:hover {
 }
 
 .section-products .single-product .part-1 {
-  border: 1px solid goldenrod;
+  border: 1px solid rgb(131, 29, 29);
   border-radius: 20%;
   position: relative;
   height: 290px;
@@ -174,93 +198,132 @@ a:hover {
 }
 
 .section-products #product-1 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Mercedes-G63.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro%20ACH-126T/Mandible-Helmet_Right_463_72-dpi-228x228.png") no-repeat center;
+  background-size:auto;
   transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Range-Rover.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro%20ACH-4/MKH-ACH-4-Product-Left-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-3 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Rolls-Royce.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro%20ACH-126%20T/Kavro%20ACH-126%20T%20(1)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-4 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Mercedes-S680-Maybach.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro%20ACH-125%20T/Kavro%20ACH-125%20T%20(4)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-5 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Toyota-Land-Cruiser-300.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/Accessories/Kavro%20Visors/KAVRO-VD-20-SM_Product_Image-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-6 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Lexus-LX-600.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/Accessories/Kavro%20Ballistic%20Eyewear/KAVRO-BALLISTIC-EYEWEAR-(3)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-7 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Toyota-Camry.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/Accessories/Kavro%20Visors/VD-06%20FM/VD-06-FM-(3)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-8 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Cadillac-Escalade.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro-ACH-111%20T/Kavro-ACH-111%20T%20(4)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-9 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/DS-SWAT.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Covert%20Overvests/TAC-II%20(FR)-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-10 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/6X6.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/PLATE%20CARRIER/Plate_Carrier_Side-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-11 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/S.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Special%20Purpose%20Vest/EXTRA%20PROTECTION%20VEST/Extra_Portection_Vest-1-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-12 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/V.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Protech%20Overvests/FRONT%20OPENING%20OVER%20VEST/Left_Opening_OverVest-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-13 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Combat.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro-TAC-I-IIA+_mood-shot-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-14 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/FS.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/FRONT%20OPENING%20VEST/front-image-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-15 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Comabt-S.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/BODY%20ARMOUR%20WITH%20UPPER%20BODY%20EXO/KAVRO-TAC-I-IIB+_Product-image-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
 .section-products #product-16 .part-1::before {
-  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/GT.webp") no-repeat center;
-  background-size: contain;
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/Tactical%20vest%20TAC-I-XI-A+/Vest-TAC-I-XI-A+-228x228.png") no-repeat center;
+  background-size:auto;
 }
 
+.section-products #product-17 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/SOFT%20SHIELD/BALLISTIC%20BRIEFCASE_SPB-I-IA/Ballistic_%20briefcase_SPB_Side-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-18 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/MSH-11-Shield-Side-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-19 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/MSH-08-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-20 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/HARD%20SHIELDS_MHS-03/HARD-SHIELDS-MSH-03-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-21 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/HARD%20SHIELDS_MHS-04/HARD%20SHIELDS_MHS-04%20(2)-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-22 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/HARD%20SHIELDS_MHS-01/HARD%20SHIELDS_MHS-01%20(2)-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-23 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/HARD%20SHIELD/HARD%20SHIELDS_MHS-02/HARD%20SHIELDS_MHS-02%20(2)-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-24 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/SHIELDS/SOFT%20SHIELD/MULTI%20PURPOSE%20SHIELD_SPS-FD-1A/MULTI%20PURPOSE%20SHIELD_SPS-FD-1A%20(4)-228x228.png") no-repeat center;
+  background-size:auto;
+}
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
   position: absolute;
   top: 15px;
   left: 2px;
   color: #ffffff;
-  background-color: darkgoldenrod;
+  background-color: rgb(131, 29, 29);
   padding: 2px 8px;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -268,7 +331,7 @@ a:hover {
 
 .section-products .single-product .part-1 .new {
   left: 0;
-  background-color: goldenrod;
+  background-color: rgb(131, 29, 29);
 }
 
 .section-products .single-product .part-1 ul {
@@ -302,6 +365,7 @@ a:hover {
   text-align: center;
   box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
   transition: color 0.2s;
+  font-size: 1.2rem;
 }
 
 .section-products .single-product .part-1 ul li a:hover {
@@ -336,8 +400,9 @@ a:hover {
 }
 
 .bg-golden {
-  background-color: #FFD700 !important;
+  background-color: rgb(131, 29, 29) !important;
 }
+
 
 /*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
 
@@ -346,8 +411,8 @@ footer {
   z-index: 0;
   width: 100%;
   position: absolute;
-  top:330.5rem;
-  background: linear-gradient(to right, #111111, #ffc107);
+  top:402.5rem;
+  background: linear-gradient(to right, #111111, #2d0b00);
   color: #fff;
   padding: 10rem 0 3rem;
   font-size: 1.2rem;

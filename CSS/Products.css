@@ -265,6 +265,12 @@ a:link {
   background-size: cover;
   background-position: center;
 }
+.card .card9{
+  background: url(https://i.redd.it/rwk6zckyj1v71.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /*---- Date Box ----*/
 .card .container-date {
   padding: 0px;
@@ -378,11 +384,11 @@ footer {
   z-index: 0;
   width: 100%;
   position: absolute;
-  top:387.5rem;
+  top:288rem;
   background: linear-gradient(to right, #111111, #2d0b00);
   color: #fff;
   padding: 10rem 0 3rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 

@@ -1,0 +1,485 @@
+/*<-------------------------------------------------- FONT IMPORT ----------------------------------------------->*/
+
+/* FONT NAME : POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FONT NAME : ARVO */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
+
+/* FONT NAME : ALEGREYA */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* FONT NAME: QUANTICO */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME: COURIER PRIME */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : Alegreya SC  */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap');
+
+/* FONT NAME : ABEL */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-size: 65.7%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  font-family: "Abel", sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
+
+.header {
+  font-family: "Bebas Neue", sans-serif;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem 3.5rem;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, .2);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header::before:hover::before {
+  left: 100%;
+}
+
+.logo {
+  position: sticky;
+  left: 5.5rem;
+  color: #fff;
+  width: 7rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 3.5rem;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: goldenrod;
+}
+
+/*<------------------------------------------------------- CAROUSEL ------------------------------------------------------------------> */
+
+.carousel-caption h5 {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+
+.carousel-caption p {
+  font-family: 'Abel', sans-serif;
+  font-size: 2rem;
+}
+
+/*<--------------------------------------------------- PRODUCT CARDS  ----------------------------------------------------->*/
+.Product-head{
+  font-size: 4rem;
+  border-bottom: 2px solid goldenrod;
+  width: fit-content;
+  position: relative;
+  left: 45rem;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+}
+
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  border: 1px solid goldenrod;
+  border-radius: 20%;
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Mercedes-G63.webp") no-repeat center;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Range-Rover.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-3 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Rolls-Royce.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-4 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Mercedes-S680-Maybach.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-5 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Toyota-Land-Cruiser-300.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-6 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Lexus-LX-600.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-7 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Toyota-Camry.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-8 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Aksum-Armored-Vehicle-Cadillac-Escalade.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-9 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/DS-SWAT.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-10 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/6X6.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-11 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/S.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-12 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/V.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-13 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Combat.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-14 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/FS.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-15 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/Comabt-S.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products #product-16 .part-1::before {
+  background: url("https://aksumarmored.com/wp-content/uploads/2024/04/GT.webp") no-repeat center;
+  background-size: contain;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  color: #ffffff;
+  background-color: darkgoldenrod;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: goldenrod;
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+  font-size: 1.2rem;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 2.5rem;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+}
+
+.bg-golden {
+  background-color: #FFD700 !important;
+}
+
+/*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
+
+footer {
+  font-family: 'Abel',sans-serif;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top:330.5rem;
+  background: linear-gradient(to right, #111111, #ffc107);
+  color: #fff;
+  padding: 10rem 0 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-family: 'Poppins', sans-serif;
+  flex-basis: 25%;
+  padding: 1rem;
+}
+
+.footer-col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col ul:hover {
+  color: rgb(40, 157, 235);
+}
+
+#footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-col h3 {
+  width: max-content;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.footer-email-id {
+  width: fit-content;
+  margin: 2rem 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form {
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5rem;
+}
+
+.footer-form .bx {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .bx {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.social-icons .bx {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #000;
+  background: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 0.1rem;
+  background: #767676;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.footer-underline span {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
