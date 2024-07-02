@@ -1,0 +1,361 @@
+/*<-------------------------------------------------- FONT IMPORT ----------------------------------------------->*/
+
+/* FONT NAME : POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FONT NAME : ARVO */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
+
+/* FONT NAME : ALEGREYA */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* FONT NAME: QUANTICO */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME: COURIER PRIME */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* FONT NAME : Alegreya SC  */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap');
+
+/* FONT NAME : ABEL */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-size: 65.7%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  font-family: "Abel", sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
+
+.header {
+  font-family: "Bebas Neue", sans-serif;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem 3.5rem;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, .2);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header::before:hover::before {
+  left: 100%;
+}
+
+.logo {
+  position: sticky;
+  left: 5.5rem;
+  color: #fff;
+  width: 7rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  margin-left: 3.5rem;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: goldenrod;
+}
+
+.Title {
+  z-index: 1;
+  position: relative;
+  bottom: 11rem;
+  width: 75rem;
+  left: 40rem;
+  font-weight: 700;
+}
+
+.Sub-Title {
+  z-index: 1;
+  width: 70rem;
+  left: 55rem;
+  position: relative;
+  top: 20rem;
+  font-weight: 700;
+  color: maroon;
+}
+
+/*<---------------------------------------- SLIDE --------------------------------------------------------------------->*/
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-section {
+  background: url(../../IMAGES/Article03.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*<----------------------------------------------- WHITE SECTION ------------------------------------------------------->*/
+.second-section {
+  display: flex;
+  background: url(https://www.thearmorylife.com/wp-content/uploads/2020/03/article-weapon-zero-what-you-need-to-know-3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40rem;
+  width: 100%;
+}
+
+.second-section::before {
+  content: "";
+  background: url('https://www.thearmorylife.com/wp-content/uploads/2020/03/article-weapon-zero-what-you-need-to-know-3.jpg') center / cover no-repeat fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40rem;
+  filter: blur(5px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.upto {
+  width: 70%;
+  font-family: 'Bebas Nueu';
+  position: relative;
+  top: 12.6rem;
+  left: 2rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.second-section h2 {
+  width: 70%;
+  font-family: 'Bebas Nueu';
+  font-weight: 500;
+  position: relative;
+  top: 5rem;
+  left: 12rem;
+  font-size: 4rem;
+}
+
+.second-section h3 {
+  font-weight: 700;
+  color: red;
+  font-size: 9rem;
+  position: relative;
+  top: 9rem;
+  left: 5rem;
+  display: inline-block;
+}
+
+.List h1 {
+  width: 48rem;
+  color: White;
+  position: relative;
+  left: 64rem;
+  margin-bottom: 1.5rem;
+  top: 7rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.List li h1 {
+  font-weight: 500;
+  color: white;
+  display: flex;
+  width: 23rem;
+  position: relative;
+  top: 5rem;
+  margin-bottom: 0.5rem;
+  left: 69rem;
+  font-size: 3rem;
+  justify-content: flex-end;
+}
+
+/*<----------------------------------------------------- FOOTER -------------------------------------------------------> */
+
+footer {
+  font-family: 'Abel', sans-serif;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 330.5rem;
+  background: linear-gradient(to right, #111111, #ffc107);
+  color: #fff;
+  padding: 10rem 0 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-col {
+  font-family: 'Poppins', sans-serif;
+  flex-basis: 25%;
+  padding: 1rem;
+}
+
+.footer-col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col ul:hover {
+  color: rgb(40, 157, 235);
+}
+
+#footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-col h3 {
+  width: max-content;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.footer-email-id {
+  width: fit-content;
+  margin: 2rem 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form {
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5rem;
+}
+
+.footer-form .bx {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .bx {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.social-icons .bx {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #000;
+  background: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 2rem auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-underline {
+  width: 100%;
+  height: 0.1rem;
+  background: #767676;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.footer-underline span {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}

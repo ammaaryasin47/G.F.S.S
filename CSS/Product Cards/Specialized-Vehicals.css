@@ -111,7 +111,7 @@ html {
 
 /*<--------------------------------------------------- PRODUCT CARDS  ----------------------------------------------------->*/
 .Product-head{
-  font-size: 4rem;
+  font-size: 3rem;
   border-bottom: 2px solid goldenrod;
   width: fit-content;
   position: relative;
@@ -340,6 +340,17 @@ a:hover {
   background-color: #FFD700 !important;
 }
 
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
 
 footer {
@@ -347,7 +358,7 @@ footer {
   z-index: 0;
   width: 100%;
   position: absolute;
-  top:330.5rem;
+  top:390.5rem;
   background: linear-gradient(to right, #111111, #ffc107);
   color: #fff;
   padding: 10rem 0 3rem;
