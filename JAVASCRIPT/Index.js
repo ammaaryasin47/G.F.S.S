@@ -1,3 +1,62 @@
+
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('foundershead');
+    const scrollPosition = window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = (scrollPosition / documentHeight) * 100;
+    const blogheader = document.getElementById('bloghead');
+
+    if (scrollPercentage > 0) {
+        header.style.width = '55rem';
+    } 
+    if (scrollPosition >= 0) {
+        blogheader.style.width = '55rem';
+    }
+    else {
+        header.style.width = '0';
+        blogheader.style.width = '10rem';
+    }
+
+});
+
+window.addEventListener('scroll', function() {
+    const container = document.querySelector('.container.border');
+    const secondContainer = document.querySelector('.second-container');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 850) { // Change 50 to the desired scroll position
+        container.classList.add('centered');
+    } else {
+        container.classList.remove('centered');
+    }
+
+    if (scrollPosition > 1300) { // Change 500 to the desired scroll position for the second container
+        secondContainer.classList.add('centered-right');
+    } else {
+        secondContainer.classList.remove('centered-right');
+    }
+});
+
+
+
+//<--------------------------------------------- CARD BORDER -------------------------------------------------------------------------->
+
+window.addEventListener('scroll', function () {
+    const cards = document.querySelectorAll('.card');
+    const windowHeight = window.innerHeight;
+
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            card.classList.add('animated');
+        } else {
+            card.classList.remove('animated');
+        }
+    });
+});
+
+
+// <------------------------------------------------- AUTOCOPY -------------------------------------------------------------------->
 document.getElementById('quote-para-name1').addEventListener('change', autocopy);
 
 function autocopy() {

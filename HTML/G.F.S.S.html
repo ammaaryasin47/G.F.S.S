@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G.F.S.S</title>
     <link rel="stylesheet" href="../CSS/Index.css"> <!-- CSS File -->
-    <link rel="stylesheet" href="../CSS/Responsive Index.css"> <!-- Responsive CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BOOTSTRAP CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- BOXICONS CDN -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- EMAILJS CDN -->
 </head>
 
-<body style="background: url(../IMAGES/Home01.jpg); background-size: contain;">
+<body style="font-family: 'Abel';" class="bg-dark">
     <!--_________________________________________________* INDEX PAGE *________________________________________________-->
     <!----------------------------------------------------------- NAVBAR ------------------------------------------------------->
     <nav>
@@ -34,136 +36,97 @@
         <h1 id="Security">SECURITY</h1>
         <h1 id="Services">SERVICES</h1>
     </div>
-    <!-------------------------------------------------------------- LEGACY--------------------------------------------------------->
-    <div class="legacy">
-        <h1  style="font-family:'Rigid Square',sans-serif;" class="legacy-head">
-            WHY CHOOSE US ?
-        </h1>
-        <p>At Guardian Fortitude Security Services,
-            Our Unwavering Commitment To Excellence Sets Us Apart.
-            With A Steadfast Dedication To Protecting What Matters Most To Our Clients,
-            We Employ A Team Of Highly Trained Professionals Who Bring A Wealth Of Experience And Expertise To Every
-            Assignment.
-            Our Proactive Approach To Security Ensures That We Anticipate And Mitigate Potential Threats Before They
-            Arise,
-            Providing Peace Of Mind To Those We Serve. We Prioritize Efficiency, Discretion, And Integrity In All Our
-            Operations.
-            Choose Guardian Fortitude Security Services For Unparalleled Protection Tailored To Your Unique Needs,
-            Because When It Comes To Security, Trust Is Paramount, And We Deliver It With Fortitude.
-        </p>
-        <p> We Understand The Dynamic Nature Of Security Challenges And Continually Adapt Our Strategies To Stay Ahead Of
-            Emerging Threats. Our Emphasis On Ongoing Training And Professional Development Ensures That Our Team Remains At The
-            Forefront Of Industry Standards, Guaranteeing The Highest Level Of Service To Our Clients.
-            With Guardian Fortitude Security Services, You Can Trust In Our Unwavering Commitment To Safeguarding Your Assets
-            And Maintaining A Secure Environment, Allowing You To Focus On What Matters Most To You.</p>
-    </div>
-    <!------------------------------------------------------------ FOUNDERS CARDS ----------------------------------------------->
-    <div class="founders">
-        <h3 id="founders">FOUNDERS</h3>
-        <div class="cards">
-            <div class="card">
-                <div class="front"
-                    style="background:url(https://c4.wallpaperflare.com/wallpaper/777/697/65/hitman-hitman-absolution-video-games-agent-47-wallpaper-preview.jpg); background-size: cover;">
-                    <span>
-                        <h4 id="BA">SHAIKH AMMAAR</h4>
-                    </span>
-                </div>
-                <div class="back" style="background-color: black;background-size: cover; color:white;">
-                    <span>
-                        <h3>Brand Ambassador</h3>
-                        <p>Representing The Brand</p>
-                        <a id="Ba-Portfolio" href="#">PORTFOLIO</a>
-                    </span>
-                </div>
+    <!-------------------------------------------------------------- Founders --------------------------------------------------------->
+    <h3 id="foundershead" class="display-3 text-light bg-dark text-center mt-5 mb-5"> FOUNDERS</h3>
+    <section class="d-flex justify-content-around mt-5">
+        <div class="card bg-dark " style="width: 30rem;">
+            <img src="https://i.pinimg.com/564x/d3/05/ce/d305ce9c4bd24114eed6c216b60641d1.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title display-5 text-light">SUPPRESSOR</h5>
+                <p class="card-text display-6 text-light">Brand Ambassador</p>
+                <a style="background-color: maroon; font-size: 1.5rem;" href="#"
+                    class="portfolio-button btn text-light">Portfolio</a>
             </div>
-            <div class="card02">
-                <div class="front02" style="background:url(../IMAGES/Founders/ekvillain.jpg);background-size: cover;">
-                    <span>
-                        <h4 id="OWNER">EK_VILLAIN</h4>
-                    </span>
-                </div>
-                <div class="back02" style="background-color: #ace97b;">
-                    <span>
-                        <h3>OWNER</h3>
-                        <p>Visionary leader ensuring unmatched security. Experienced, Trustworthy, Dedicated,
-                            Professional & Reliable .</p>
-                    </span>
-                </div>
+        </div>
+        <div class="card bg-dark" style="width: 30rem;">
+            <img src="https://media-bom1-1.cdn.whatsapp.net/v/t61.24694-24/429956630_980328737001724_2272576042334208262_n.jpg?ccb=11-4&oh=01_Q5AaIN4PuPrV4DG0L_tLE_Dd8_ZGuXh-t8XuyoPhSEgw04T9&oe=669543C3&_nc_sid=e6ed6c&_nc_cat=110"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title display-5 text-light">EK_VILLAIN</h5>
+                <p class="card-text display-6 text-light">Owner</p>
+                <a style="background-color: maroon; font-size: 1.5rem;" href="#" class="btn text-light">Go somewhere</a>
             </div>
+        </div>
+        <div class="card bg-dark" style="width: 30rem;">
+            <img src="https://media-bom1-1.cdn.whatsapp.net/v/t61.24694-24/421284380_818396646918622_4980664265139956231_n.jpg?ccb=11-4&oh=01_Q5AaIEU-923XQmS1Hm7tEDfg9_3dKK0zuX8LdLHbpDRTu4py&oe=66953F3C&_nc_sid=e6ed6c&_nc_cat=109"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title display-5 text-light">H3CT0R</h5>
+                <p class="card-text display-6 text-light">Partner</p>
+                <a style="background-color: maroon; font-size: 1.5rem;" href="#" class="btn text-light">Go somewhere</a>
+            </div>
+        </div>
+    </section>
 
-            <div class="card03">
-                <div class="front03" style="background:url(https://i.pinimg.com/736x/5b/73/1e/5b731ee64eb330063b8fccebf035b233.jpg);background-size: contain; background-repeat: no-repeat;">
-                    <span>
-                        <h4 id="CEO">H3CT0R</h4>
-                    </span>
+    <!--------------------------------------------------------------- BLOGS --------------------------------------------------------->
+    <h3 id="bloghead" class="blog-head display-3 text-light bg-dark text-center mt-5 mb-5">BLOG</h3>
+    <div class="first-container container border">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p-3 bg-dark">
+                    <img style="width: 55rem;" class="mt-5"
+                        src="https://i.pinimg.com/564x/e5/73/cf/e573cfc942e3ad6173a404cd8ca04372.jpg">
                 </div>
-                <div class="back03" style="background-color: #ace97b;">
-                    <span>
-                        <h3>C.E.O</h3>
-                        <p>Managing & Directing The Firm ...</p>
-                    </span>
+            </div>
+            <div class="col-md-6">
+                <div class="Blog-para p-3 bg-dark text-light display-6 m-5">
+                    At Guardian Fortitude Security Services, We Understand The Critical Need To Protect Your Digital
+                    A1ssets Against Ever-Evolving Threats. Our Comprehensive Security Solutions Are Designed To
+                    Safeguard Your Business From Cyber Attacks, Data Breaches, And Other Online Vulnerabilities. Our
+                    Team Of Experts Is Dedicated To Providing Personalized Security Strategies That Fit The Unique Needs
+                    Of Your Organization. Read Our Blog On Cyber Security To Know More ...<br>
+                    <a style="background-color: maroon; font-size: 1.5rem; justify-content: center;" href="#"
+                        class="mt-5 d-flex btn text-light">EXPLORE</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--------------------------------------------------------- MEMORY GALLERY ----------------------------------------------->
-    <div class="Gallery">
-        <div class="Gallery-head">
-            <h1> VISUAL ODESSEY </h1>
-        </div>
-        <div class="gallery">
-            <div class="galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/43/2b/2f/432b2ff6a6a8de3a58dc5e4093538f13.jpg"
-                    style="width: 200px;" alt="GroupPhoto-01">
-                <p class="gallery-para"> SPECIAL ASSAULT TEAM </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/6b/e9/e3/6be9e3bfc7c1270f52fee2cebf06252f.jpg"
-                    style="width: 200px;" alt="">
-                <p class="gallery-para"> VEHICAL ESCORT </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image"
-                    src="https://www.fivealarmsecurity.com/wp-content/uploads/2024/04/IMG_2183-768x576.png"
-                    style="width: 300px;" alt="Special-Ops-Vehical""
-                        alt="">
-                <p class=" gallery-para"> MOBILE SURVEILLANCE TRAILER </p>
-            </div>
-            <div class=" galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/c5/00/29/c50029fb5929bbd8c7996321bd462898.jpg"
-                    style="width: 250px;" alt="">
-                <p class="gallery-para"> GARAGE </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/f4/e0/a9/f4e0a9887fb559afd4b77bd8a288c9b8.jpg"
-                    alt="">
-                <p class="gallery-para"> EMERGENCY SERVICES ON STANDBY </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image"
-                    src="https://media.istockphoto.com/id/1146357352/photo/military-commando-helicopter-drops.jpg?s=612x612&w=0&k=20&c=87NqPOq-CY3FPNhQQhawdyZxzrtDWnyYeM9XwslthVA="
-                    alt="">
-                <p class="gallery-para"> EXTRACTION DRILLS </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/a3/66/54/a36654c9591fe75e67926642b44bc718.jpg"
-                    alt="">
-                <p class="gallery-para"> REGULAR MAINTAINANCE </p>
-            </div>
-            <div class="galleryitem">
-                <img class="gallery-image" src="https://i.pinimg.com/564x/0f/f3/10/0ff310f8a04cae646431dcfd7c0b6954.jpg"
-                    style="width: 270px;" alt="">
-                <p class="gallery-para"> PRIVATE HANGAR </p>
-            </div>
 
+    <div class="second-container container border mt-5 d-flex ">
+        <div class="col-md-6">
+            <div class="Blog-para p-3 bg-dark text-light display-6 m-5">
+                Understanding Bullet Calibers Is Crucial For Ensuring Optimal Performance And Safety In Our Operations.
+                Bullet Calibers Refer To The Diameter Of The Bullet Or The Internal Diameter Of The Barrel.Choosing The
+                Right Caliber Involves Considering The Specific Needs Of The Mission, The Firearm Being Used, And The
+                Shooter's Proficiency. Read Our Blog On Calibers To Know More ...<br>
+                <a style="background-color: maroon; font-size: 1.5rem; justify-content: center;" href="#"
+                    class="mt-5 d-flex btn text-light">EXPLORE</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p-3 bg-dark">
+                    <img style="width: 53rem;"
+                        src="https://i0.wp.com/blog.cheaperthandirt.com/wp-content/uploads/2020/08/AdobeStock_326803598.jpeg?fit=1266%2C844&ssl=1">
+                </div>
+            </div>
         </div>
     </div>
+    <!------------------------------------------------------------- HEROS  ---------------------------------------------------------------->
+    <h3 class="whychooseus-head text-light bg-dark text-center mt-5 mb-5">WHY CHOOSE US ?</h3>
+    <h3 class=" whychooseus display-5 text-light text-center mt-5 border p-5">
+        At <span class="guardian-fortitude">Guardian Fortitude</span> Security Services, We Prioritize Your Safety And Peace Of Mind Above All Else. Our Highly
+        Trained And Experienced Team Of Security Professionals Is Committed To Providing Top-Notch Protection For Your
+        Business, Home, And Events. With Cutting-Edge Technology, Personalized Security Plans, And 24/7 Support, We
+        Ensure That You Receive The Best Security Solutions Tailored To Your Specific Needs. Trust Us To Safeguard What
+        Matters Most, Because At Guardian Fortitude We Fortify The Present To Safeguard Your Future.
+    </h3>
     <!-------------------------------------------------------- FREE QUOTATION FORM ------------------------------------------>
-    <div class="quote-form-div">
+    <div class="quote-form-div mt-5">
         <h1 id="quote-head"> FREE QUOTATION </h1>
-        <p class="quote-para">To The Management At &nbsp; <strong style="font-size: 1.7rem;">GUARDIAN FORTITUDE SECURITY
-                SERVICES</strong>,</p>
-
+        <p class="quote-para">To The Management At &nbsp; <strong style="font-size: 1.7rem;">GUARDIAN FORTITUDE
+                SECURITY SERVICES</strong>,</p>
         <p class="quote-para"> My Name Is <input onchange="autocopy" id="quote-para-name1" type="text"
                 placeholder="NAME" required></p>
         <p class="quote-para">Residing At <input type="text" placeholder="ADDRESS" required></p>
@@ -199,7 +162,7 @@
         <a href="#" class="quote-send"><i class='bx bx-send'></i></a>
     </div>
     <!------------------------------------------------------------ FOOTER ------------------------------------------------------->
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="footer-row">
 
             <div class="footer-col"> <!-- Logo And Tagline -->
@@ -261,6 +224,7 @@
 
     </footer>
     <script src="../JAVASCRIPT/Index.js"></script> <!-- JS FILE -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 
 </html>

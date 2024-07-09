@@ -216,14 +216,221 @@ html {
   justify-content: flex-end;
 }
 
+/*<---------------------------------------------- PRODUCTS ----------------------------------------------------------->*/
+
+.Product-head{
+  font-size: 4rem;
+  border-bottom: 2px solid rgb(131, 29, 29);
+  width: fit-content;
+  position: relative;
+  left: 55rem;
+}
+
+.Product-head-2{
+  font-size: 4rem;
+  border-bottom: 2px solid rgb(131, 29, 29);
+  width: fit-content;
+  position: relative;
+  left: 45rem;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+}
+
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  border: 1px solid rgb(131, 29, 29);
+  border-radius: 20%;
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+  background: url("https://p.turbosquid.com/ts-thumb/5a/Rj6fWr/KE/grenadethumb/png/1690438446/300x300/sharp_fit_q85/0272cd32996cf51e19cf0e81813ea809357c337d/grenadethumb.jpg") no-repeat center;
+  background-size:cover;
+  transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+  background: url("https://p.turbosquid.com/ts-thumb/49/bPzZFL/9t/smokegrenade021/png/1689933604/300x300/sharp_fit_q85/851cf83dc355d4fca4b298d251ff3b2de0d2b9e0/smokegrenade021.jpg") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-3 .part-1::before {
+  background: url("https://p.turbosquid.com/ts-thumb/A1/2FgSPM/EZpJZQwU/m84stungrenadeoldc4dmodel000/jpg/1599832276/300x300/sharp_fit_q85/fb34ef7b330ba403eea7a16d49ed32004cd5c8b6/m84stungrenadeoldc4dmodel000.jpg") no-repeat center;
+  background-size:cover;
+}
+
+.section-products #product-4 .part-1::before {
+  background: url("https://p.turbosquid.com/ts-thumb/KI/yCg6PR/rO/z00/png/1693999554/300x300/sharp_fit_q85/925ed7479f43b0052136d23733b2a866a14ccd28/z00.jpg") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-5 .part-1::before {
+  background: url("https://i.pinimg.com/736x/dc/14/67/dc14673d1657660953e7ff4dd9bd8e3a.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-6 .part-1::before {
+  background: url("https://i.pinimg.com/736x/17/0d/dc/170ddc02eaf17af66a62792c0e929e09.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-7 .part-1::before {
+  background: url("https://i.pinimg.com/564x/ac/1f/ec/ac1fec3d30b9c6b5645338cc1e04eac9.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-8 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro-ACH-111%20T/Kavro-ACH-111%20T%20(4)-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-9 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Covert%20Overvests/TAC-II%20(FR)-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products #product-10 .part-1::before {
+  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/PLATE%20CARRIER/Plate_Carrier_Side-228x228.png") no-repeat center;
+  background-size:auto;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  color: #ffffff;
+  background-color: rgb(131, 29, 29);
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: rgb(131, 29, 29);
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+  font-size: 1.2rem;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 2.5rem;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+}
+
+.bg-golden {
+  background-color: rgb(131, 29, 29) !important;
+}
 /*<----------------------------------------------------- FOOTER -------------------------------------------------------> */
 
 footer {
   font-family: 'Abel', sans-serif;
   z-index: 0;
   width: 100%;
-  position: absolute;
-  top: 330.5rem;
   background: linear-gradient(to right, #111111, #ffc107);
   color: #fff;
   padding: 10rem 0 3rem;
