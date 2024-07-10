@@ -217,7 +217,14 @@ html {
 }
 
 /*<---------------------------------------------- PRODUCTS ----------------------------------------------------------->*/
-
+.Product-head01
+{
+  font-size: 6rem;
+  border-bottom: 2px solid rgb(131, 29, 29);
+  width: fit-content;
+  position: relative;
+  left: 55rem;
+}
 .Product-head{
   font-size: 4rem;
   border-bottom: 2px solid rgb(131, 29, 29);
@@ -226,13 +233,6 @@ html {
   left: 55rem;
 }
 
-.Product-head-2{
-  font-size: 4rem;
-  border-bottom: 2px solid rgb(131, 29, 29);
-  width: fit-content;
-  position: relative;
-  left: 45rem;
-}
 
 a,
 a:hover {
@@ -296,8 +296,8 @@ a:hover {
 }
 
 .section-products #product-2 .part-1::before {
-  background: url("https://p.turbosquid.com/ts-thumb/49/bPzZFL/9t/smokegrenade021/png/1689933604/300x300/sharp_fit_q85/851cf83dc355d4fca4b298d251ff3b2de0d2b9e0/smokegrenade021.jpg") no-repeat center;
-  background-size:auto;
+  background: url("https://i.pinimg.com/564x/a3/31/0b/a3310b6bdfc9fb2f3bb6b1d4760f68a7.jpg") no-repeat center;
+  background-size:contain;
 }
 
 .section-products #product-3 .part-1::before {
@@ -306,38 +306,67 @@ a:hover {
 }
 
 .section-products #product-4 .part-1::before {
-  background: url("https://p.turbosquid.com/ts-thumb/KI/yCg6PR/rO/z00/png/1693999554/300x300/sharp_fit_q85/925ed7479f43b0052136d23733b2a866a14ccd28/z00.jpg") no-repeat center;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5PVGNiGJe0Ag5oet605AhHOnF3LD71Hc8gMeNWLnJzZH7P1XmaQJ5pPFOE-WI15LmduQ&usqp=CAU") no-repeat center;
   background-size:auto;
 }
 
 .section-products #product-5 .part-1::before {
-  background: url("https://i.pinimg.com/736x/dc/14/67/dc14673d1657660953e7ff4dd9bd8e3a.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/564x/dc/5b/5c/dc5b5c10c5e1d8322f7cdc13323c18c7.jpg") no-repeat center;
   background-size:contain;
 }
 
 .section-products #product-6 .part-1::before {
-  background: url("https://i.pinimg.com/736x/17/0d/dc/170ddc02eaf17af66a62792c0e929e09.jpg") no-repeat center;
-  background-size:contain;
+  background: url("https://i.pinimg.com/564x/0e/15/0d/0e150df8411a42e9b56f2a35575f3ac2.jpg") no-repeat center;
+  background-size:cover;
 }
 
 .section-products #product-7 .part-1::before {
-  background: url("https://i.pinimg.com/564x/ac/1f/ec/ac1fec3d30b9c6b5645338cc1e04eac9.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/564x/41/a6/88/41a688e9e65d130c4293ab582b49bedc.jpg") no-repeat center;
   background-size:contain;
 }
 
 .section-products #product-8 .part-1::before {
-  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Helmets/ACH%20Combat%20Helmets/Kavro-ACH-111%20T/Kavro-ACH-111%20T%20(4)-228x228.png") no-repeat center;
-  background-size:auto;
+  background: url("https://i.pinimg.com/564x/2b/12/2c/2b122c60d3a58536759ca8cbd67591a7.jpg") no-repeat center;
+  background-size:contain;
 }
 
 .section-products #product-9 .part-1::before {
-  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Covert%20Overvests/TAC-II%20(FR)-228x228.png") no-repeat center;
-  background-size:auto;
+  background: url("https://i.pinimg.com/564x/73/45/d2/7345d2e613c3f0e52b927ad7fbeec7c4.jpg") no-repeat center;
+  background-size:contain;
 }
 
 .section-products #product-10 .part-1::before {
-  background: url("https://www.mku.com/image/cache/catalog/Kavro%20Ballistic%20Vest/Tactical%20Overvests/PLATE%20CARRIER/Plate_Carrier_Side-228x228.png") no-repeat center;
-  background-size:auto;
+  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-11 .part-1::before {
+  background: url("https://i.pinimg.com/564x/f2/d5/69/f2d569e5adbfe23f8bfe1d407f0b2480.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-12 .part-1::before {
+  background: url("https://i.pinimg.com/736x/ec/f0/ac/ecf0ac1bbb80463836e1aba0e8136131.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-13 .part-1::before {
+  background: url("https://i.pinimg.com/564x/28/a4/99/28a499ce4e83ac876680a8801c16426d.jpg") no-repeat center;
+  background-size:cover;
+}
+.section-products #product-14 .part-1::before {
+  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-15 .part-1::before {
+  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background-size:contain;
+}
+
+.section-products #product-16 .part-1::before {
+  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background-size:contain;
 }
 
 .section-products .single-product .part-1 .discount,
