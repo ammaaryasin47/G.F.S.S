@@ -31,7 +31,8 @@
   text-decoration: none;
 }
 
-body,html {
+body,
+html {
   font-size: 65.7%;
   height: 100%;
   width: 100%;
@@ -44,7 +45,7 @@ body,html {
 /*<---------------------------------------------------------- NAVBAR ------------------------------------------------->*/
 
 .header {
-  font-family: "Bebas Neue",sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   z-index: 3;
   position: fixed;
   top: 0;
@@ -110,10 +111,10 @@ body,html {
 
 /* <-----------------------------------------------------SEARCH PAGE ---------------------------------------------------------------> */
 
-.searchcontainer{
+.searchcontainer {
   height: 100%;
   width: 100%;
-  background: url(https://cdn.wallpapersafari.com/39/90/BCW1Ot.jpg);  
+  background: url(https://cdn.wallpapersafari.com/39/90/BCW1Ot.jpg);
   background-size: contain;
 }
 
@@ -130,7 +131,7 @@ body,html {
 }
 
 .search_input {
-  color:white;
+  color: white;
   border: 0;
   outline: 0;
   background: none;
@@ -170,29 +171,33 @@ body,html {
 a:link {
   text-decoration: none;
 }
+
 /*<----------------------------------------------------- PRODUCT CATALOGUE ------------------------------------------------------------->*/
 
 .cardscontainer {
   background: black;
-  padding-top: 80px; 
+  padding-top: 80px;
   padding-bottom: 100px;
 }
-.cardscontainer a{
+
+.cardscontainer a {
   text-decoration: none;
   outline: none;
 }
+
 /*---- Card ----*/
-.row{
+.row {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 }
+
 .card {
   border: none;
-  margin-bottom:2rem ;
+  margin-bottom: 2rem;
   border-radius: 8px;
   margin-top: 0px;
   -webkit-transition: all 0.2s ease-in;
@@ -202,6 +207,7 @@ a:link {
   transition: all 0.2s ease-in;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.50);
 }
+
 .card:hover {
   box-shadow: 0px 9px 17px rgba(0, 0, 0, 0.70);
   -webkit-transition: all 0.2s ease-in;
@@ -210,6 +216,7 @@ a:link {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
 .card .image-box {
   background: #ffffff;
   overflow: hidden;
@@ -217,60 +224,70 @@ a:link {
   border-radius: 5px;
   height: 450px;
 }
-.card .card1{
+
+.card .card1 {
   background: url(https://images.squarespace-cdn.com/content/v1/5f6f5a30a49b5d4c23bee3fe/ab198a33-1032-4e38-a300-3de3be395787/overhead-front-angled-dark.png?format=1500w);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card2{
+
+.card .card2 {
   background: url(https://i.pinimg.com/564x/93/5f/52/935f52fde0180d61a5698b880133a197.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card3{
+
+.card .card3 {
   background: url(https://www.aa-store.at/images/cached/625EE5A2489D5/products/27040/65758/800x800/pts-mtek-flux-helmet-tan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card4{
+
+.card .card4 {
   background: url(https://i.pinimg.com/564x/09/4f/2f/094f2ff1d0be52d7c4cd0b341f0c8915.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card5{
+
+.card .card5 {
   background: url(https://i.pinimg.com/564x/73/2b/78/732b78bdda48879fc118633568f4b0e5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card6{
+
+.card .card6 {
   background: url(https://i.pinimg.com/736x/20/80/dd/2080ddd565c3228750a349741760cf7c.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card7{
+
+.card .card7 {
   background: url(https://i.pinimg.com/564x/26/07/35/260735e3296d490859538d4fbd56262d.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card8{
+
+.card .card8 {
   background: url(https://i.pinimg.com/564x/ac/54/e9/ac54e9f9e65b83b8dbdf17c0afd46f68.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card .card9{
+
+.card .card9 {
   background: url(https://i.redd.it/rwk6zckyj1v71.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 /*---- Date Box ----*/
 .card .container-date {
   padding: 0px;
@@ -279,6 +296,7 @@ a:link {
   color: #FFFFFF !important;
   font-weight: 900;
 }
+
 .card .date-box {
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -287,13 +305,14 @@ a:link {
   transition: all 0.5s ease-in;
   padding: 16px 0px;
   background: none;
-  text-align: center; 
+  text-align: center;
   width: 58px;
   float: right;
   margin: 0px 12px 0px 0px;
-  background: rgba(0, 0 ,0 , 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
-.card:hover .date-box {  
+
+.card:hover .date-box {
   background: #FFFF00;
   color: #000000;
   -webkit-transition: all 0.5s ease-in;
@@ -302,18 +321,21 @@ a:link {
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
+
 .container-date .date-box span {
   font-size: 26px;
   line-height: 29px;
 }
+
 .container-date .date-box p {
   line-height: 14px;
   margin: auto 0px;
   text-transform: uppercase;
 }
+
 /*---- Text Container ----*/
 .card .image-box .text-container {
-  font-family: 'Abel',sans-serif;
+  font-family: 'Abel', sans-serif;
   padding: 18px 20px;
   margin-top: 324px;
   -webkit-transition: all 0.5s ease;
@@ -323,16 +345,18 @@ a:link {
   transition: all 0.5s ease;
   overflow: hidden;
 }
+
 .card .image-box:hover .text-container {
   padding: 16px 20px;
   margin-top: 204px;
-  background: rgba(0, 0 ,0 , 0.7);
+  background: rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .card .image-box .text-container p {
   font-size: 14px;
   letter-spacing: 1px;
@@ -340,6 +364,7 @@ a:link {
   margin: 12px 0px 5px 0px;
   padding: 0px;
 }
+
 .subtitle {
   font-size: 38px;
   text-align: left;
@@ -349,15 +374,18 @@ a:link {
   font-family: 'Abel', sans-serif;
   margin-top: 0px;
 }
+
 .subtitle i {
   color: grey;
   visibility: hidden;
   margin-left: 8px;
 }
+
 .card:hover .subtitle i {
   visibility: visible;
 }
-/*---- Button ----*/  
+
+/*---- Button ----*/
 .button-down {
   background: grey;
   padding: 12px 0px;
@@ -370,21 +398,22 @@ a:link {
   transition: 0.3s;
 }
 
-.button-down:hover{
+.button-down:hover {
   font-size: 17px;
 }
 
-.button-down a{
+.button-down a {
   color: black;
 }
+
 /*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
 
 footer {
-  font-family: 'Abel',sans-serif;
+  font-family: 'Abel', sans-serif;
   z-index: 0;
   width: 100%;
   position: absolute;
-  top:288rem;
+  top: 288rem;
   background: linear-gradient(to right, #111111, #2d0b00);
   color: #fff;
   padding: 10rem 0 3rem;

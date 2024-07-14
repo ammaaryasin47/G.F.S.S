@@ -93,7 +93,7 @@ html {
 }
 
 .navbar a:hover {
-  color: goldenrod;
+  color: grey;
 }
 
 .Title {
@@ -355,18 +355,18 @@ a:hover {
   background-size:cover;
 }
 .section-products #product-14 .part-1::before {
-  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/564x/c0/61/e5/c061e5062a53a5bb8bd24c5e39949f67.jpg") no-repeat center;
   background-size:contain;
 }
 
 .section-products #product-15 .part-1::before {
-  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/564x/53/8d/79/538d7985aa0f78a54626fa8136047e0c.jpg") no-repeat center;
   background-size:contain;
 }
 
 .section-products #product-16 .part-1::before {
-  background: url("https://i.pinimg.com/564x/16/31/8a/16318aafc9a4e3aa2fdbdd73ff37f840.jpg") no-repeat center;
-  background-size:contain;
+  background: url("https://i.pinimg.com/564x/e7/78/34/e7783418e4d0847350c1ca0f43fc1562.jpg") no-repeat center;
+  background-size:cover;
 }
 
 .section-products .single-product .part-1 .discount,
@@ -460,7 +460,7 @@ footer {
   font-family: 'Abel', sans-serif;
   z-index: 0;
   width: 100%;
-  background: linear-gradient(to right, #111111, #ffc107);
+  background: linear-gradient(to right, #111111, #797979);
   color: #fff;
   padding: 10rem 0 3rem;
   font-size: 1.2rem;
