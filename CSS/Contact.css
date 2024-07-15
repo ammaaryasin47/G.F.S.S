@@ -96,15 +96,44 @@ html {
     color: rgb(146, 146, 146);
 }
 
+/*<------------------------------------------------ IMAGE -------------------------------------------------------------->*/
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    filter: blur(4px);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-emergency {
+    top: 20rem;
+    left: 105rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: black;
+    filter: opacity(60%);
+    border-radius: 2rem;
+}
+
 
 /*<-------------------------------------- FOOTER ----------------------------------------------------------------------> */
 
 footer {
+    position: relative;
     font-family: 'Abel', sans-serif;
     z-index: 0;
     width: 100%;
-    position: absolute;
-    top: 288rem;
     background: linear-gradient(to right, #111111, #2d0b00);
     color: #fff;
     padding: 10rem 0 3rem;
